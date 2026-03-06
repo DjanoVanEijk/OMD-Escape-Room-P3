@@ -16,8 +16,7 @@
     uitleg van jullie escape room.</p>
   <p>Via deze pagina gaat een team naar de aanmeldpagina</p>
 
-  <button><a href="./rooms/room_1.php">Start</a></button>
-  <button><a href="./rooms/room_1.php">Reviews</a></button>
+  <button><a href="./rooms/room_1.php">Room 1</a></button>
   
 </body>
 
