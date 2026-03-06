@@ -59,7 +59,7 @@ function checkAnswer() {
 
 // Timer functionaliteit
 
-let tijd = 1500;
+let tijd = 300;
 
 let timer;
 
