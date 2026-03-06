@@ -24,7 +24,7 @@ a {
 .box {
   width: 100px;
   height: 100px;
-  background-color: #3498db;
+  background-color: rgb(75, 75, 75);
   color: white;
   display: flex;
   align-items: center;
@@ -35,7 +35,7 @@ a {
 }
 
 .box:hover {
-  background-color: #2980b9;
+  background-color: rgb(75, 75, 75);
 }
 
 .overlay {
@@ -53,7 +53,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: white;
+  background: rgb(75, 75, 75);
   padding: 20px;
   border-radius: 10px;
   display: none;
@@ -64,7 +64,8 @@ button {
   margin-top: 10px;
   padding: 5px 10px;
   cursor: pointer;
-  background-color: rgb(75, 75, 75);
-  padding: 20px;
+  background-color: rgb(62, 62, 62);
+  color: white;
+  padding: 10px;
   width: 100px;
 }
