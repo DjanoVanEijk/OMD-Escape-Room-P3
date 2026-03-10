@@ -12,10 +12,10 @@
   <header></header>
   <img src="img/footagecrate-4k-rectangular-stamp-guilty@2X.webp" alt="">
   <h1>Welkom</h1>
-  <p>De button hieronder is alleen voor testdoeleinden bij het opstarten van het project. Deze pagina is bedoeld voor de
-    uitleg van jullie escape room.</p>
-  <p>Via deze pagina gaat een team naar de aanmeldpagina</p>
-
+  <p>Jarenlang heb je gewacht op dit moment</p>
+  <p>De bewakers denken dat alles onder controle is, Maar jij hebt een plan</p>
+  <p>Gebruik alles wat je kunt vinden, werk samen en blijf stil</p>
+  <p>Dit is je kans!</p>
   <button><a href="./rooms/room_1.php">Room 1</a></button>
   
 </body>
