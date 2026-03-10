@@ -81,9 +81,19 @@ function end() {
   
   if (tijd === 0) {
     clearInterval(timer);
-    alert("Klaar!");
-    document.querySelector("body").style.backgroundColor = "green"
+    document.getElementById("overlay").style.display = "block";
   }
 }
 
 timer = setInterval(end, 1000);
+
+
+// Functie om de overlay te tonen
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}

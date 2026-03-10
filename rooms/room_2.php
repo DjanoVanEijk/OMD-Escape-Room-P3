@@ -20,6 +20,13 @@ try {
 </head>
 
 <body>
+  <h1>Team: ...</h1>
+  <h1 id="timers"></h1>
+
+  <div id="overlay">
+  <img src="/img/10688.png" alt="Game Over">
+  <p>De tijd is om! Je bent er niet in geslaagd te ontsnappen</p>
+  </div>
 
   <div class="container">
     <?php foreach ($riddles as $index => $riddle) : ?>
