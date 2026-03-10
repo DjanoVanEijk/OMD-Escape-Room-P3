@@ -21,7 +21,7 @@ try {
 
 <body>
   <h1>Team: ...</h1>
-  <h1 id="timers"></h1>
+  <h1 id="timers">5:00</h1>
 
 <div id="overlay">
 <img src="../img/10688.png" alt="Game Over">
