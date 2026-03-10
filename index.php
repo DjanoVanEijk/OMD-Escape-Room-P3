@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Escape Room</title>
-  <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
   
 </head>
-<header></header>
 <body>
+  <header></header>
   <img src="img/footagecrate-4k-rectangular-stamp-guilty@2X.webp" alt="">
   <h1>Welkom</h1>
   <p>Jarenlang heb je gewacht op dit moment</p>
