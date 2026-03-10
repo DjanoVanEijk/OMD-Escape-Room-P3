@@ -23,7 +23,7 @@ try {
   <h1>Team: ...</h1>
 
   <div class="container">
-
+    <div class="flex1">
     <?php foreach ($riddles as $index => $riddle) : ?>
     <div class="box box<?php echo $index + 1; ?>" onclick="openModal(<?php echo $index; ?>)"
       data-index="<?php echo $index; ?>" data-riddle="<?php echo htmlspecialchars($riddle['riddle']); ?>"
@@ -33,6 +33,14 @@ try {
     </div>
     <?php endforeach; ?>
   </div>
+  <br>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Sit dicta incidunt, optio ipsa hic numquam vitae quisquam 
+    magni cum repellendus veritatis nesciunt? Ea maxime pariatur 
+    maiores doloribus officiis, consectetur cum.
+  </p>
+    </div>
 
   <section class="overlay" id="overlay" onclick="closeModal()"></section>
 

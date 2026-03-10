@@ -14,17 +14,26 @@ a {
   text-decoration: none;
 }
 
-.container {
+.flex1 {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 50px;
+}
+
+
+.container{
+  margin: auto;
+  padding: 20px;
+  width:750px;
+  height: auto;
+  background-color: rgba(101, 101, 101, 0.956);
+  border-radius: 50px;
 }
 
 .box {
   width: 100px;
   height: 100px;
-  background-color: rgb(75, 75, 75);
+  background-color: rgba(78, 78, 78, 0.956);
   color: white;
   display: flex;
   align-items: center;
