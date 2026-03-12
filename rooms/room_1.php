@@ -28,8 +28,7 @@ try {
 <p>De tijd is om! Je bent er niet in geslaagd te ontsnappen</p>
 </div>
 
-
-  <div class="container">
+  <div id="container" class="container">
     <div class="flex1">
     <?php foreach ($riddles as $index => $riddle) : ?>
     <div class="box box<?php echo $index + 1; ?>" onclick="openModal(<?php echo $index; ?>)"

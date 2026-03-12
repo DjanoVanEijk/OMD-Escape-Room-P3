@@ -2,6 +2,8 @@
 function openModal(index) {
   // Zoek het element met de class 'box' en het bijbehorende data-index
   let box = document.querySelector(`.box[data-index='${index}']`);
+  // container verdwijnt - Djano
+  document.getElementById("container").style.display = "none"
 
   // Haal de vraag en het juiste antwoord uit de dataset van de box
   let riddleText = box.dataset.riddle;
@@ -26,7 +28,8 @@ function closeModal() {
   // Zet de overlay en modal weer op 'none' zodat ze niet meer zichtbaar zijn
   document.getElementById('overlay').style.display = 'none';
   document.getElementById('modal').style.display = 'none';
-
+  //container komt terug - Djano
+  document.getElementById("container").style.display = "flex"
   // Maak de feedback tekst leeg
   document.getElementById('feedback').innerText = '';
 }
