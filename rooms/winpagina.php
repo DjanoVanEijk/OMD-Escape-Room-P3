@@ -10,7 +10,12 @@
     <script src="../js/app.js" defer></script>
 </head>
 <body>
-    <h1>Win</h1>
-    <img class = "Run" src="../img/Running-Man-Icon.png" alt="afbeelding">
+    <h1>Je hebt gewonnen!!</h1>
+    <div id="container" class="container">  
+        <div class="windiv">
+            <img class="winimg" src="../img/Running-Man-Icon.png" alt="afbeelding">
+            <p class="winp">Na een gevaarlijke reis bent u er eindelijk in geslaagd te ontsnappen.</p>
+        </div>
+    </div>    
 </body>
 </html>
