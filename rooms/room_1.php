@@ -23,7 +23,7 @@ try {
   <h1>Team: ...</h1>
   <h1 id="timers">5:00</h1>
 
-<div id="overlay">
+<div id="overlayverlies">
 <img src="../img/10688.png" alt="Game Over">
 <p>De tijd is om! Je bent er niet in geslaagd te ontsnappen</p>
 </div>
@@ -49,7 +49,7 @@ try {
   </p>
     </div>
 
-  <section class="overlay" id="overlay" onclick="closeModal()"></section>
+  <section id="overlay" onclick="closeModal()"></section>
 
   <section class="modal" id="modal">
     <h2>Escape Room Vraag</h2>

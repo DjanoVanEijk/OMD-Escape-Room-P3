@@ -81,19 +81,13 @@ function end() {
   
   if (tijd === 0) {
     clearInterval(timer);
-    document.getElementById("overlay").style.display = "block";
-  }
+    document.getElementById("overlayverlies").style.display = "block";
+  } else {
+    document.getElementById("overlayverlies").style.display = "none";
+  };
 }
 
 timer = setInterval(end, 1000);
 
 
 // Functie om de overlay te tonen
-
-function on() {
-  document.getElementById("overlay").style.display = "block";
-}
-
-function off() {
-  document.getElementById("overlay").style.display = "none";
-}
