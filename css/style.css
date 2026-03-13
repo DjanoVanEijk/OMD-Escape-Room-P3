@@ -27,6 +27,15 @@
   padding: 0px;
 }
 
+.winpagina{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url("../img/escapeprison.png");
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
 a {
   color: white;
   text-decoration: none;
