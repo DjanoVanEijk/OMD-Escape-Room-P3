@@ -1,9 +1,27 @@
 
 
-body {
+.cell {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-image: url("../img/Background.jpg");
+  background-image: url("../img/prisoncell.png");
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+.office{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url("../img/prisonoffice.png");
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+.yard{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url("../img/prisonyard.png");
   color: white;
   margin: 0px;
   padding: 0px;
