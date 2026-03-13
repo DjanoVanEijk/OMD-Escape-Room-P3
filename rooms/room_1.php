@@ -35,7 +35,7 @@ try {
     </div>
   </div>
 
-  <div>
+ 
     <div class="flex1">
     <?php foreach ($riddles as $index => $riddle) : ?>
     <div class="box box<?php echo $index + 1; ?>" onclick="openModal(<?php echo $index; ?>)"
@@ -46,7 +46,6 @@ try {
     </div>
     <?php endforeach; ?>
   </div>
-    </div>
 
   <section id="overlay" onclick="closeModal()"></section>
 
