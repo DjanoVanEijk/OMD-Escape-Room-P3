@@ -27,7 +27,7 @@ try {
 
   
   <div id="overlayverlies">
-    <div id="container" class="container">
+    <div>
       <div class="organiseverlies">
         <img class="verliesimg" src="../img/10688.png" alt="Game Over">
         <p class="verliesp">De tijd is om! Je bent er niet in geslaagd te ontsnappen</p>
@@ -35,7 +35,7 @@ try {
     </div>
   </div>
 
-  <div id="container" >
+  <div>
     <div class="flex1">
     <?php foreach ($riddles as $index => $riddle) : ?>
     <div class="box box<?php echo $index + 1; ?>" onclick="openModal(<?php echo $index; ?>)"

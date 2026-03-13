@@ -28,7 +28,7 @@ try {
   <p>De tijd is om! Je bent er niet in geslaagd te ontsnappen</p>
   </div>
 
-  <div class="container">
+  <div>
     <?php foreach ($riddles as $index => $riddle) : ?>
     <div class="box box<?php echo $index + 1; ?>" onclick="openModal(<?php echo $index; ?>)"
       data-index="<?php echo $index; ?>" data-riddle="<?php echo htmlspecialchars($riddle['riddle']); ?>"

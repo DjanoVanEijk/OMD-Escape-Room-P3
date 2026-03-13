@@ -11,7 +11,7 @@
 </head>
 <body>
     <h1>Je hebt gewonnen!!</h1>
-    <div id="container" class="container">  
+    <div>  
         <div class="windiv">
             <img class="winimg" src="../img/Running-Man-Icon.png" alt="afbeelding">
             <p class="winp">Na een gevaarlijke reis bent je er eindelijk in geslaagd te ontsnappen.</p>
