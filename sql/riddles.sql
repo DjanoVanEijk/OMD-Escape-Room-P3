@@ -13,12 +13,12 @@ VALUES
 ('Ik open deuren maar ben geen deur. Wat ben ik?', 'Sleutel', 'Bewakers dragen er veel.', 1),
 ('Wat gebruikt een gevangene soms om door de muur te graven?', 'Lepel', 'Je krijgt het bij eten.', 1),
 
--- Kamer 2 (Gang van de gevangenis)
+-- Kamer 2 (Bewakerskantoor)
 ('Wie bewaakt de gevangenen?', 'Bewaker', 'Hij loopt rond met sleutels.', 2),
 ('Wat gaat af als iemand probeert te ontsnappen?', 'Alarm', 'Het maakt veel lawaai.', 2),
 ('Hoe noem je iemand die in de gevangenis zit?', 'Gevangene', 'Hij mag niet naar buiten.', 2),
 
--- Kamer 3 (Bewakerskamer)
+-- Kamer 3 (Gevangenis Binnenplaats)
 ('Waar bewaren bewakers belangrijke papieren van gevangenen?', 'Archief', 'Hier liggen dossiers.', 3),
 ('Wat gebruik je om een cel op slot te doen?', 'Slot', 'Hier past een sleutel in.', 3),
 ('Wat zit er op de muur om de gevangenis in de gaten te houden?', 'Camera', 'Bewaking kijkt hiernaar.', 3);

@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/style.css">
   
 </head>
-<body>
+<body class="home">
   <header></header>
   <img src="img/footagecrate-4k-rectangular-stamp-guilty@2X.webp" alt="">
   <h1>Welkom</h1>
