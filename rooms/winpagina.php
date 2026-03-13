@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/app.js" defer></script>
 </head>
-<body>
+<body class="winpagina">
     <h1>Je hebt gewonnen!!</h1>
     <div id="container" class="container">  
         <div class="windiv">
