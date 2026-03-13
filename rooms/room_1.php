@@ -20,8 +20,10 @@ try {
 </head>
 
 <body class="cell">
-  <h1>Team: ...</h1>
-  <h1 id="timers">5:00</h1>
+  <div class="flex2">
+  <h1 class="info" id="timers">5:00</h1> <h1 class=info>Team: ...</h1> <h1 class="info">?</h1>
+  <div>
+  
 
   
   <div id="overlayverlies">
@@ -33,24 +35,17 @@ try {
     </div>
   </div>
 
-  <div id="container" class="container">
+  <div id="container" >
     <div class="flex1">
     <?php foreach ($riddles as $index => $riddle) : ?>
     <div class="box box<?php echo $index + 1; ?>" onclick="openModal(<?php echo $index; ?>)"
       data-index="<?php echo $index; ?>" data-riddle="<?php echo htmlspecialchars($riddle['riddle']); ?>"
       data-answer="<?php echo htmlspecialchars($riddle['answer']); ?>">
-      Vraag <?php echo $index + 1; ?>
+      <?php echo $index + 1; ?>
 
     </div>
     <?php endforeach; ?>
   </div>
-  <br>
-  <p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-    Sit dicta incidunt, optio ipsa hic numquam vitae quisquam 
-    magni cum repellendus veritatis nesciunt? Ea maxime pariatur 
-    maiores doloribus officiis, consectetur cum.
-  </p>
     </div>
 
   <section id="overlay" onclick="closeModal()"></section>
