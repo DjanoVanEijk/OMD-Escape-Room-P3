@@ -23,10 +23,15 @@ try {
   <h1>Team: ...</h1>
   <h1 id="timers">5:00</h1>
 
-<div id="overlayverlies">
-<img src="../img/10688.png" alt="Game Over">
-<p>De tijd is om! Je bent er niet in geslaagd te ontsnappen</p>
-</div>
+  
+  <div id="overlayverlies">
+    <div id="container" class="container">
+      <div class="organiseverlies">
+        <img class="verliesimg" src="../img/10688.png" alt="Game Over">
+        <p class="verliesp">De tijd is om! Je bent er niet in geslaagd te ontsnappen</p>
+      </div>
+    </div>
+  </div>
 
   <div id="container" class="container">
     <div class="flex1">
