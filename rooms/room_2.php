@@ -19,7 +19,7 @@ try {
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="office">
   <h1>Team: ...</h1>
   <h1 id="timers"></h1>
 

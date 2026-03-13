@@ -19,7 +19,7 @@ try {
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="cell">
   <h1>Team: ...</h1>
   <h1 id="timers">5:00</h1>
 
