@@ -74,10 +74,17 @@ a {
   cursor: pointer;
 }
 
-.box1 { top: 50px; left: 100px; width: 80px; height: 80px;}
-.box2 { top: 50px; left: 100px; width: 80px; height: 80px;}
-.box3 { top: 50px; left: 100px; width: 80px; height: 80px;}
-.box4 { top: 50px; left: 100px; width: 80px; height: 80px;}
+.room1box1 { top: 50px; left: 100px; width: 80px; height: 80px;}
+.room1box2 { top: 50px; left: 100px; width: 80px; height: 80px;}
+.room1box3 { top: 50px; left: 100px; width: 80px; height: 80px;}
+
+.room2box1 { top: 50px; left: 100px; width: 80px; height: 80px;}
+.room2box2 { top: 50px; left: 100px; width: 80px; height: 80px;}
+.room2box3 { top: 50px; left: 100px; width: 80px; height: 80px;}
+
+.room3box1 { top: 50px; left: 100px; width: 80px; height: 80px;}
+.room3box2 { top: 50px; left: 100px; width: 80px; height: 80px;}
+.room3box3 { top: 50px; left: 100px; width: 80px; height: 80px;}
 
 #overlay {
   position: fixed;
