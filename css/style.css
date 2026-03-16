@@ -58,7 +58,8 @@ a {
 
 .flex2{
   display: flex;
-  justify-content:space-evenly;
+  justify-content:center;
+  margin: auto;
 }
 
 .info{
@@ -68,17 +69,15 @@ a {
 }
 
 .box {
-  width: 100px;
-  height: 100px;
-  background-color: rgba(255, 0, 0, 0.264);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  background: rgba(255, 0, 0, 0.304);
   cursor: pointer;
-  font-weight: bold;
-  border-radius: 8px;
 }
+
+.box1 { top: 50px; left: 100px; width: 80px; height: 80px;}
+.box2 { top: 50px; left: 100px; width: 80px; height: 80px;}
+.box3 { top: 50px; left: 100px; width: 80px; height: 80px;}
+.box4 { top: 50px; left: 100px; width: 80px; height: 80px;}
 
 #overlay {
   position: fixed;
