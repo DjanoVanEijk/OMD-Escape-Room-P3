@@ -1,3 +1,10 @@
+// Deze functie opent de modal voor teamregistratie
+
+function openModal_1() {
+  document.getElementById('overlay1').style.display = 'block';
+  document.getElementById('modal1').style.display = 'block';
+
+}
 
 // Deze functie opent de modal en toont de vraag
 function openModal(index) {
