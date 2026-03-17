@@ -96,7 +96,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.677);
+  background: rgba(0, 0, 0, 0.567);
   padding: 20px;
   border-color: white;
   border-width: 2px;
@@ -110,7 +110,7 @@ button {
   margin-top: 10px;
   padding: 5px 10px;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.481);
   border-color: white;
   border-radius: 10px;
   border-width: 2px;
@@ -119,15 +119,6 @@ button {
   width: 100px;
 }
 
-.button2 {
-  margin-top: 10px;
-  padding: 5px 10px;
-  cursor: pointer;
-  background-color: rgb(62, 62, 62);
-  color: white;
-  padding: 10px;
-  width: 100px;
-}
 
 #overlayverlies {
   position: fixed; 
