@@ -83,8 +83,8 @@ a {
 .room2box3 { top: 260px; left: 500px; width: 160px; height: 200px;}
 
 .room3box1 { top: 380px; left: 300px; width: 180px; height: 150px;}
-.room3box2 { top: 700px; left: 900px; width: 80px; height: 80px;}
-.room3box3 { top: 570px; left: 150px; width: 80px; height: 80px;}
+.room3box2 { top: 670px; left: 750px; width: 550px; height: 150px; border-top-right-radius: 300px;}
+.room3box3 { top: 560px; left: 110px; width: 180px; height: 100px;}
 
 #overlay {
   position: fixed;
