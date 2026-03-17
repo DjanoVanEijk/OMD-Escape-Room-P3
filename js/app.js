@@ -1,3 +1,4 @@
+
 // Deze functie opent de modal en toont de vraag
 function openModal(index) {
   // Zoek het element met de class 'box' en het bijbehorende data-index
@@ -29,7 +30,8 @@ function closeModal() {
   // Maak de feedback tekst leeg
   document.getElementById('feedback').innerText = '';
 }
-
+// Punten //
+let punten = 0;
 // Deze functie controleert of het ingevoerde antwoord correct is
 function checkAnswer() {
   // Haal het antwoord van de gebruiker op uit het invoerveld en verwijder onnodige spaties
@@ -41,14 +43,13 @@ function checkAnswer() {
   // Haal het feedback element op om de gebruiker te informeren
   let feedback = document.getElementById('feedback');
 
-  // Punten //
-  let punten = 0;
   // Vergelijk het antwoord van de gebruiker met het juiste antwoord (hoofdlettergevoeligheid negeren)
   if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
     // Als het antwoord juist is, geef positieve feedback
     feedback.innerText = 'Correct! Goed gedaan!';
     feedback.style.color = 'green';
-    console.log(punten++);
+    punten = punten + 1;
+    
 
     // Sluit de modal na 1 seconde
     setTimeout(closeModal, 1000);
@@ -57,6 +58,13 @@ function checkAnswer() {
     // Als het antwoord fout is, geef negatieve feedback
     feedback.innerText = 'Fout, probeer opnieuw!';
     feedback.style.color = 'red';
+  }
+  console.log(punten);
+  // Ga naar volgende page //
+
+  if(punten === 3){
+    document.getElementById('nextpage').style.display = 'block';
+    document.getElementById('endroom').style.display = 'block';
   }
 }
 

@@ -56,6 +56,14 @@ try {
     <p id="feedback"></p>
   </section>
 
+  <section id="nextpage" onclick="closeModal()"></section>
+
+  <section id="endroom">
+    <h2>Goed gedaan!</h2>
+    <p>Je mag naar het volgende kamer!</p>
+    <a href="room_2.php"><button>Gaan</button></a>
+  </section>
+
   <script src="../js/app.js"></script>
 
 </body>
