@@ -41,14 +41,18 @@ function checkAnswer() {
   // Haal het feedback element op om de gebruiker te informeren
   let feedback = document.getElementById('feedback');
 
+  // Punten //
+  let punten = 0;
   // Vergelijk het antwoord van de gebruiker met het juiste antwoord (hoofdlettergevoeligheid negeren)
   if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
     // Als het antwoord juist is, geef positieve feedback
     feedback.innerText = 'Correct! Goed gedaan!';
     feedback.style.color = 'green';
+    console.log(punten++);
 
     // Sluit de modal na 1 seconde
     setTimeout(closeModal, 1000);
+
   } else {
     // Als het antwoord fout is, geef negatieve feedback
     feedback.innerText = 'Fout, probeer opnieuw!';
