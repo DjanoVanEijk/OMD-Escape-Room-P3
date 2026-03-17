@@ -81,6 +81,16 @@ a {
 .room3box2 { top: 670px; left: 750px; width: 550px; height: 150px; border-top-right-radius: 300px;}
 .room3box3 { top: 560px; left: 110px; width: 180px; height: 100px;}
 
+#overlay1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
 #overlay {
   position: fixed;
   top: 0;
@@ -89,6 +99,18 @@ a {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: none;
+}
+
+.modal1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(75, 75, 75);
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  width: 300px;
 }
 
 .modal {
