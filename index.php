@@ -16,7 +16,7 @@
   <p>De bewakers denken dat alles onder controle is, Maar jij hebt een plan</p>
   <p>Gebruik alles wat je kunt vinden, werk samen en blijf stil</p>
   <p>Dit is je kans!</p>
-  <button><a href="./rooms/room_1.php">Play</a></button>
+  <button><a href="./rooms/room_1.php">Room 1</a></button>
   
 </body>
 

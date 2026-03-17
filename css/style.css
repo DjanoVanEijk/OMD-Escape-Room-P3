@@ -50,11 +50,6 @@ a {
   text-decoration: none;
 }
 
-.flex1{
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
 
 .flex2{
   display: flex;
@@ -74,9 +69,9 @@ a {
   cursor: pointer;
 }
 
-.room1box1 { top: 50px; left: 100px; width: 80px; height: 80px;}
-.room1box2 { top: 50px; left: 100px; width: 80px; height: 80px;}
-.room1box3 { top: 50px; left: 100px; width: 80px; height: 80px;}
+.room1box1 { top: 220px; left: 900px; width: 400px; height: 250px;}
+.room1box2 { top: 540px; left: 900px; width: 350px; height: 100px;}
+.room1box3 { top: 510px; left: 500px; width: 150px; height: 50px;}
 
 .room2box1 { top: 280px; left: 1000px; width: 280px; height: 180px;}
 .room2box2 { top: 600px; left: 900px; width: 380px; height: 180px;}
@@ -101,8 +96,11 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgb(75, 75, 75);
+  background: rgba(0, 0, 0, 0.481);
   padding: 20px;
+  border-color: white;
+  border-width: 2px;
+  border-style:groove;
   border-radius: 10px;
   display: none;
   width: 300px;
@@ -112,11 +110,15 @@ button {
   margin-top: 10px;
   padding: 5px 10px;
   cursor: pointer;
-  background-color: rgb(62, 62, 62);
+  background: rgba(0, 0, 0, 0.481);
+  border-color: white;
+  border-radius: 10px;
+  border-width: 2px;
   color: white;
   padding: 10px;
   width: 100px;
 }
+
 
 #overlayverlies {
   position: fixed; 

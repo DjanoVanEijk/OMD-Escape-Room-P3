@@ -35,14 +35,15 @@ try {
     </div>
   </div>
 
- 
-
+  <div>
     <?php foreach ($riddles as $index => $riddle) : ?>
     <div class="box room1box<?php echo $index + 1; ?>" onclick="openModal(<?php echo $index; ?>)"
       data-index="<?php echo $index; ?>" data-riddle="<?php echo htmlspecialchars($riddle['riddle']); ?>"
       data-answer="<?php echo htmlspecialchars($riddle['answer']); ?>">
-      <?php echo $index + 1; ?>
-      <?php endforeach; ?>
+      Box <?php echo $index + 1; ?>
+    </div>
+    <?php endforeach; ?>
+  </div>
 
 
   <section id="overlay" onclick="closeModal()"></section>
