@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Escape Room</title>
-<link rel="stylesheet" href="css/style.css">
-  
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script> 
 </head>
 <body class="home">
   <header></header>
@@ -16,16 +16,24 @@
   <p>De bewakers denken dat alles onder controle is, Maar jij hebt een plan</p>
   <p>Gebruik alles wat je kunt vinden, werk samen en blijf stil</p>
   <p>Dit is je kans!</p>
-  <button onclick="openModal_1()">Register</button>
+  <button onclick="openForm()">Register</button>
   
-  <section id="overlay1" onclick="closeModal()"></section>
+  <section id="overform" onclick="closeModal()">
 
-  <section class="modal1" id="modal1">
-    <h2>Teamnaam:</h2>
-    <p id="registration"></p>
-    <input type="text" id="teamname" placeholder="Typ je teamnaam">
-    <button onclick="submitRegistration()">Play</button>
-    <p id="feedback"></p>
+    <section class="formmodal" id="formmodal">
+      <form action="rooms/room_1.php" method="post">
+        <h2>Teamnaam:</h2>
+        <input type="text" id="teamname" naam="teamname" placeholder="Typ je teamnaam" require>
+        <?php 
+          $teamnaam = $_POST['teamname'] ?? '';
+          if (isset($_POST['teamname'])) {
+          echo "Vul het eerst in!";    
+          };
+        ?>
+        <input class="subform" type="submit" value="Play">
+      </form>
+    </section>
+
   </section>
 
 </body>

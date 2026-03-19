@@ -1,9 +1,8 @@
 // Deze functie opent de modal voor teamregistratie
 
-function openModal_1() {
-  document.getElementById('overlay1').style.display = 'block';
-  document.getElementById('modal1').style.display = 'block';
-
+function openForm() {
+  document.getElementById('overform').style.display = 'block';
+  document.getElementById('formmodal').style.display = 'block';
 }
 
 // Deze functie opent de modal en toont de vraag
@@ -89,8 +88,8 @@ function formatTijd(seconden) {
 }
 
 function update() {
-  let display = document.getElementById("timers");
-  display.innerHTML = formatTijd(tijd);
+  let clock = document.getElementById("timers");
+  clock.innerHTML = formatTijd(tijd);
 }
 
 function end() {

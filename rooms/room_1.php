@@ -21,7 +21,15 @@ try {
 
 <body class="cell">
   <div class="flex2">
-  <h1 class="info" id="timers">5:00</h1> <h1 class=info>Team: ...</h1> <h1 class="info">?</h1>
+    <h1 class="info" id="timers">5:00</h1> 
+    <h1 class=info>
+      <?php $teamnaam = $_POST['teamname'] ?? '';
+        if (isset($_POST['teamname'])) {
+        echo "Team: $teamnaam";
+        }; 
+      ?>
+    </h1> 
+    <h1 class="info">?</h1>
   <div>
   
 
