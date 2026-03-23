@@ -30,7 +30,7 @@
         <input type="text" id="name2" name="name2" required>
         <h2>Speler 3:</h2>
         <input type="text" id="name3" name="name3" required>
-        <input class="subform" type="submit" value="Play" >
+        <input id="subform" type="submit" value="Play" >
         <?php 
           $teamnaam = $_POST['teamname'] ?? '';
           if (isset($_POST['teamname'])) {
