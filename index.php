@@ -30,13 +30,16 @@
         <input type="text" id="name2" name="name2" required>
         <h2>Speler 3:</h2>
         <input type="text" id="name3" name="name3" required>
+        <input class="subform" type="submit" value="Play" >
         <?php 
           $teamnaam = $_POST['teamname'] ?? '';
           if (isset($_POST['teamname'])) {
           echo "Vul het eerst in!";    
           };
+          if (isset($_POST['name1']) && isset($_POST['name2']) && isset($_POST['name3'])) {
+            echo "Vul het eerst in!";
+          }
         ?>
-        <input class="subform" type="submit" value="Play">
       </form>
     </section>
 
