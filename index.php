@@ -23,7 +23,13 @@
     <section class="formmodal" id="formmodal">
       <form action="rooms/room_1.php" method="post">
         <h2>Teamnaam:</h2>
-        <input type="text" id="teamname" naam="teamname" placeholder="Typ je teamnaam" require>
+        <input type="text" id="teamname" naam="teamname" placeholder="Typ je teamnaam" required>
+        <h2>Speler 1:</h2>
+        <input type="text" id="name1" name="name1" required>
+        <h2>Speler 2:</h2>
+        <input type="text" id="name2" name="name2" required>
+        <h2>Speler 3:</h2>
+        <input type="text" id="name3" name="name3" required>
         <?php 
           $teamnaam = $_POST['teamname'] ?? '';
           if (isset($_POST['teamname'])) {
