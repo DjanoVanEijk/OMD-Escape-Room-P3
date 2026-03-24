@@ -23,7 +23,7 @@
     <section class="formmodal" id="formmodal">
       <form action="rooms/room_1.php" method="post">
         <h2>Teamnaam:</h2>
-        <input type="text" id="teamname" naam="teamname" placeholder="Typ je teamnaam" required>
+        <input type="text" id="teamname" naam="teamname"  required>
         <h2>Speler 1:</h2>
         <input type="text" id="name1" name="name1" required>
         <h2>Speler 2:</h2>
