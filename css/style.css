@@ -123,6 +123,31 @@ a {
   width: 300px;
 }
 
+.teamname1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .subform{
   margin-top: 50px;
   padding: 5px 10px;
