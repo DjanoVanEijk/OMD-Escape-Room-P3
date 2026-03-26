@@ -214,7 +214,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(95, 95, 95, 0.699); 
+  background-color: rgba(57, 57, 57, 0.27); 
   z-index: 2; 
   cursor: pointer; 
   display: none;
@@ -246,14 +246,18 @@ button {
   justify-content: center;
   width: 40%;
   height: 99%;
+  border-radius: 30px;
+  margin-left: 100px;
 }
 
 .verliesp{
   display: flex;
   align-items: center;
+  font-size: 30px;
 }
 
 .organiseverlies{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
 }

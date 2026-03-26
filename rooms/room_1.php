@@ -30,16 +30,14 @@ try {
       ?>
     </h1> 
     <h1 class="info">?</h1>
-  <div>
+</div>
   
 
   
   <div id="overlayverlies">
-    <div>
-      <div class="organiseverlies">
-        <img class="verliesimg" src="../img/10688.png" alt="Game Over">
-        <p class="verliesp">De tijd is om! Je bent er niet in geslaagd te ontsnappen</p>
-      </div>
+    <div class="organiseverlies">
+      <img class="verliesimg" src="../img/verliesimg.jpg" alt="Game Over">
+      <p class="verliesp">De tijd is om! Je bent er niet in geslaagd te ontsnappen</p>
     </div>
   </div>
 
