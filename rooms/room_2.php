@@ -33,8 +33,10 @@ try {
   <div>
 
   <div id="overlayverlies">
-  <img src="/img/10688.png" alt="Game Over">
-  <p>De tijd is om! Je bent er niet in geslaagd te ontsnappen</p>
+    <div class="organiseverlies">
+      <img class="verliesimg" src="../img/verliesimg.jpg" alt="Game Over">
+      <p class="verliesp">De tijd is om! Je bent er niet in geslaagd te ontsnappen</p>
+    </div>
   </div>
 
   <div>
