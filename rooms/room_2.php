@@ -20,8 +20,17 @@ try {
 </head>
 
 <body class="office">
-  <h1>Team: ...</h1>
-  <h1 id="timers"></h1>
+  <div class="flex2">
+    <h1 class="info" id="timers">5:00</h1> 
+    <h1 class=info>
+      <?php $teamnaam = $_POST['teamname'] ?? '';
+        if (isset($_POST['teamname'])) {
+        echo "Team: $teamnaam";
+        }; 
+      ?>
+    </h1> 
+    <h1 class="info">?</h1>
+  <div>
 
   <div id="overlayverlies">
   <img src="/img/10688.png" alt="Game Over">
