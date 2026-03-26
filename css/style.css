@@ -65,10 +65,10 @@ a {
 
 .box {
   position: absolute;
-  background: rgba(255, 0, 0, 0.304);
+  background: rgba(255, 0, 0, 0);
   background-image: url(../img/red\ circle.png);
   background-repeat: no-repeat;
- 
+  background-size: contain;
   cursor: pointer;
 }
 
