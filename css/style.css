@@ -66,11 +66,9 @@ a {
 .box {
   position: absolute;
   background: rgba(255, 0, 0, 0.304);
-  background-image: url(../img/red\ circle.png);
-  background-repeat: no-repeat;
- 
   cursor: pointer;
 }
+
 
 .room1box1 { top: 220px; left: 900px; width: 400px; height: 250px; opacity: 0; transition: 0.5s;}
 .room1box1:hover{ opacity: 0.5;}
