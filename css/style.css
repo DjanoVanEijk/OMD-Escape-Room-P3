@@ -65,10 +65,9 @@ a {
 
 .box {
   position: absolute;
-
   background-image: url(../img/red\ circle.png);
   background-repeat: no-repeat;
- background-size:contain;
+  background-size: contain;
   cursor: pointer;
 }
 
