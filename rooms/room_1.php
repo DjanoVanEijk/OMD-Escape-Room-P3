@@ -33,9 +33,9 @@ try {
       <h1 class="info">?</h1>
       <div class="hints">
         <ul>
-          <li>lkjkrtlkn</li>
-          <li></li>
-          <li></li>
+          <li>Hier zit een gevangene.</li>
+          <li>De bewaker heeft ze.</li>
+          <li>Je krijgt het bij eten.</li>
         </ul>
       </div>
     </div>
