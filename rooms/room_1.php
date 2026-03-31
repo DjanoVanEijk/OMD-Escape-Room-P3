@@ -28,9 +28,17 @@ try {
         echo "Team: $teamnaam";
         };
         ?>
-    </h1>
-        
-    <h1 class="info">?</h1>
+    </h1>  
+    <div class="hints-drop">
+      <h1 class="info">?</h1>
+      <div class="hints">
+        <ul>
+          <li>lkjkrtlkn</li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
   </div>
     <div class="playersName">
       <h2>

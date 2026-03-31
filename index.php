@@ -21,22 +21,22 @@
   <section id="overform" onclick="closeModal()">
 
     <section class="formmodal" id="formmodal">
-      <div class="teamname1">
       <form action="rooms/room_1.php" method="post">
-        <h2>Teamnaam:</h2>
-        <input type="text" id="teamname" name="teamname" required>
+        <div class="teamname1">
+          <h2>Teamnaam:</h2>
+          <input type="text" id="teamname" name="teamname" required>
         </div>
         <div class="player1">
-        <h2>Speler 1:</h2>
-        <input type="text" id="name1" name="name1" required>
+          <h2>Speler 1:</h2>
+          <input type="text" id="name1" name="name1" required>
         </div>
         <div class="player2">
-        <h2>Speler 2:</h2>
-        <input type="text" id="name2" name="name2" required>
+          <h2>Speler 2:</h2>
+          <input type="text" id="name2" name="name2" required>
         </div>
         <div class="player3">
-        <h2>Speler 3:</h2>
-        <input type="text" id="name3" name="name3" required>
+          <h2>Speler 3:</h2>
+          <input type="text" id="name3" name="name3" required>
         </div>
         <input class="subform" type="submit" value="Play" >
         <?php 

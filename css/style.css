@@ -63,6 +63,23 @@ a {
   padding: 10px;
 }
 
+.hints-drop{
+  display: flex;
+  flex-direction: row;
+}
+
+.hints{
+  display: none;
+  background-color: rgba(0, 0, 0, 0.519);
+  border-radius: 50px;
+  padding: 10px;
+  position: absolute;
+}
+
+.hints-drop:hover .hints{
+  display: block;
+}
+
 .box {
   position: absolute;
   background-image: url(../img/red\ circle.png);
