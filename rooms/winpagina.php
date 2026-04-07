@@ -13,7 +13,7 @@
     <h1>Je hebt gewonnen!!</h1>
     <div>  
         <div class="windiv">
-            <img class="winimg" src="../img/Adobe Express - file.png" alt="afbeelding">
+            <img class="winimg" src="../img/winimg.webp" alt="afbeelding">
             <div class="tekstdeel">
                 <h2 class="winp">Na een gevaarlijke reis <br>
                 bent je er eindelijk in geslaagd te ontsnappen.</h2>

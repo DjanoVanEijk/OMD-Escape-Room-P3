@@ -246,12 +246,15 @@ button {
   justify-content: center;
   width: 40%;
   height: 99%;
+  margin-left: 80px;
+  margin-top: 100px;
+  border-radius: 50px;
 }
 
 .tekstdeel{
   display: flex;
   flex-direction: column;
-  gap: 100px
+  gap: 25px
 }
 
 .winp{
@@ -264,6 +267,12 @@ button {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  background: rgba(0, 0, 0, 0.481);
+  padding: 20px;
+  border-color: white;
+  border-width: 2px;
+  border-style:groove;
+  border-radius: 10px;
 }
 
 .review{
