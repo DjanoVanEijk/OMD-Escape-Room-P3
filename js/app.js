@@ -108,5 +108,4 @@ function end() {
 
 timer = setInterval(end, 1000);
 
-
 // Functie om de overlay te tonen

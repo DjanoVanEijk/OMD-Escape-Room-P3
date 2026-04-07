@@ -14,7 +14,16 @@
     <div>  
         <div class="windiv">
             <img class="winimg" src="../img/Adobe Express - file.png" alt="afbeelding">
-            <p class="winp">Na een gevaarlijke reis bent je er eindelijk in geslaagd te ontsnappen.</p>
+            <div class="tekstdeel">
+                <h2 class="winp">Na een gevaarlijke reis <br>
+                bent je er eindelijk in geslaagd te ontsnappen.</h2>
+                <form action="" method="post" class="formreview">
+                    <h2 class="review">Review</h2>
+                    <input type="number" name="rating" id="rating" placeholder="star rating" max=5 min=0>
+                    <textarea type="text" name="description" id="description" placeholder="description"></textarea>
+                    <input type="submit" value="Submit" id="reviewsub">
+                </form>
+            </div>
         </div>
     </div>    
 </body>

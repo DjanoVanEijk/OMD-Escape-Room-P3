@@ -238,6 +238,7 @@ button {
 .windiv {
   display: flex;
   flex-direction: row;
+  gap: 100px;
 }
 
 .winimg {
@@ -247,9 +248,54 @@ button {
   height: 99%;
 }
 
-.winp {
+.tekstdeel{
+  display: flex;
+  flex-direction: column;
+  gap: 100px
+}
+
+.winp{
   display: flex;
   align-items: center;
+  margin-top: 70px;
+}
+
+.formreview{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.review{
+  display: flex;
+  justify-content: flex-start;
+}
+
+#rating{
+  width: 100px;
+  border-radius: 5px;
+  border-color: black;
+  box-shadow: 5px 10px #8888886f;
+}
+
+#description{
+  padding-bottom: 100px;
+  border-radius: 5px;
+  border-color: black;
+  box-shadow: 5px 10px #88888860;
+}
+
+#reviewsub{
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.481);
+  border-color: white;
+  border-radius: 10px;
+  border-width: 2px;
+  color: white;
+  padding: 10px;
+  width: 100px;
 }
 
 /* verliesscherm */
@@ -272,8 +318,8 @@ button {
 .verliesimg{
   display: flex;
   justify-content: center;
-  width: 40%;
-  height: 99%;
+  width: 30%;
+  height: 100%;
   border-radius: 30px;
   margin-left: 100px;
   filter: contrast(200%);
@@ -282,8 +328,8 @@ button {
 
 .verliesp{
   display: flex;
-  align-items: center;
-  font-size: 30px;
+  justify-content: center;
+  font-size: 25px;
 }
 
 .organiseverlies{
