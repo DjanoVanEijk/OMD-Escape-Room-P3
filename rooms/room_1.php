@@ -65,6 +65,7 @@ try {
     <div class="organiseverlies">
       <img class="verliesimg" src="../img/verliesimg.jpg" alt="Game Over">
       <p class="verliesp">De tijd is om! Je bent er niet in geslaagd te ontsnappen</p>
+      <a href="room_1.php"><button>Play again</button></a>
     </div>
   </div>
 

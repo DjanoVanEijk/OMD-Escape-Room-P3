@@ -273,16 +273,16 @@ button {
 .verliesimg{
   display: flex;
   justify-content: center;
-  width: 40%;
-  height: 99%;
+  width: 30%;
+  height: 100%;
   border-radius: 30px;
   margin-left: 100px;
 }
 
 .verliesp{
   display: flex;
-  align-items: center;
-  font-size: 30px;
+  justify-content: center;
+  font-size: 25px;
 }
 
 .organiseverlies{
