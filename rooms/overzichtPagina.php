@@ -19,7 +19,7 @@ try {
 </head>
 <body>
     <h1>Overzicht Pagina</h1>
-    <a href="index.php"><button>Terug naar startpagina</button></a>
+    <a href="../index.php"><button>Terug naar startpagina</button></a>
 
 
 
