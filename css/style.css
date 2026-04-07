@@ -91,23 +91,23 @@ a {
 
 .room1box1 { top: 200px; left: 930px; width: 300px; height: 300px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room1box1:hover{ opacity: 0.5;}
-.room1box2 { top: 540px; left: 900px; width: 350px; height: 100px; opacity: 0; transition: 0.5s;}
+.room1box2 { top: 550px; left: 1020px; width: 100px; height: 130px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room1box2:hover{ opacity: 0.5;}
-.room1box3 { top: 510px; left: 500px; width: 150px; height: 50px; opacity: 0; transition: 0.5s;}
+.room1box3 { top: 490px; left: 500px; width: 100px; height: 100px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room1box3:hover{ opacity: 0.5;}
 
-.room2box1 { top: 280px; left: 1000px; width: 280px; height: 180px; opacity: 0; transition: 0.5s;}
+.room2box1 { top: 280px; left: 1000px; width: 280px; height: 180px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room2box1:hover{ opacity: 0.5;}
-.room2box2 { top: 600px; left: 900px; width: 380px; height: 180px; opacity: 0; transition: 0.5s;}
+.room2box2 { top: 600px; left: 900px; width: 380px; height: 180px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room2box2:hover{ opacity: 0.5;}
-.room2box3 { top: 260px; left: 500px; width: 160px; height: 200px; opacity: 0; transition: 0.5s;}
+.room2box3 { top: 260px; left: 500px; width: 160px; height: 200px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room2box3:hover{ opacity: 0.5;}
 
-.room3box1 { top: 380px; left: 300px; width: 180px; height: 150px; opacity: 0; transition: 0.5s;}
+.room3box1 { top: 380px; left: 300px; width: 180px; height: 150px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room3box1:hover{ opacity: 0.5;}
-.room3box2 { top: 670px; left: 750px; width: 550px; height: 150px; border-top-right-radius: 300px; opacity: 0; transition: 0.5s;}
+.room3box2 { top: 670px; left: 750px; width: 550px; height: 150px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room3box2:hover{ opacity: 0.5;}
-.room3box3 { top: 560px; left: 110px; width: 180px; height: 100px; opacity: 0; transition: 0.5s;}
+.room3box3 { top: 560px; left: 110px; width: 180px; height: 100px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room3box3:hover{ opacity: 0.5;}
 
 #overform {
@@ -233,6 +233,72 @@ button {
   width: 100px;
 }
 
+/* winpagina */
+
+.windiv {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.winimg {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  height: 99%;
+}
+
+.tekstdeel{
+  display: flex;
+  flex-direction: column;
+  gap: 100px
+}
+
+.winp{
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.formreview{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.review{
+  display: flex;
+  justify-content: flex-start;
+}
+
+#rating{
+  width: 100px;
+  border-radius: 5px;
+  border-color: black;
+  box-shadow: 5px 10px #8888886f;
+}
+
+#description{
+  padding-bottom: 100px;
+  border-radius: 5px;
+  border-color: black;
+  box-shadow: 5px 10px #88888860;
+}
+
+#reviewsub{
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.481);
+  border-color: white;
+  border-radius: 10px;
+  border-width: 2px;
+  color: white;
+  padding: 10px;
+  width: 100px;
+}
+
+/* verliesscherm */
 
 #overlayverlies {
   position: fixed; 
@@ -243,32 +309,11 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(57, 57, 57, 0.27); 
+  background-color: rgba(0, 0, 0, 0.27); 
   z-index: 2; 
   cursor: pointer; 
   display: none;
 }
-
-/* winpagina */
-
-.windiv {
-  display: flex;
-  flex-direction: row;
-}
-
-.winimg {
-  display: flex;
-  justify-content: center;
-  width: 40%;
-  height: 99%;
-}
-
-.winp {
-  display: flex;
-  align-items: center;
-}
-
-/* verliesscherm */
 
 .verliesimg{
   display: flex;
@@ -277,6 +322,8 @@ button {
   height: 100%;
   border-radius: 30px;
   margin-left: 100px;
+  filter: contrast(200%);
+  opacity: 70%;
 }
 
 .verliesp{
