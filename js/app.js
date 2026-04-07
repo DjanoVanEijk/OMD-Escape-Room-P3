@@ -77,7 +77,7 @@ function checkAnswer() {
 
 // Timer functionaliteit
 
-let tijd = 300;
+let tijd = parseInt(localStorage.getItem("tijd")) || 900;
 
 let timer;
 
@@ -91,13 +91,14 @@ function formatTijd(seconden) {
 function update() {
   let clock = document.getElementById("timers");
   clock.innerHTML = formatTijd(tijd);
+  localStorage.setItem("tijd", tijd);
 }
 
 function end() {
   tijd--;
   update();
   
-  if (tijd === 0) {
+  if (tijd <= 0) {
     clearInterval(timer);
     document.getElementById("overlayverlies").style.display = "block";
   } else {

@@ -21,7 +21,7 @@ try {
 
 <body class="cell">
   <div class="flex2">
-    <h1 class="info" id="timers">5:00</h1> 
+    <h1 class="info" id="timers">0:00</h1> 
     <h1 class=info>
       <?php $teamnaam = $_POST['teamname'] ?? '';
         if (isset($_POST['teamname'])) {
@@ -33,9 +33,11 @@ try {
       <h1 class="info">?</h1>
       <div class="hints">
         <ul>
-          <li>Hier zit een gevangene.</li>
-          <li>De bewaker heeft ze.</li>
-          <li>Je krijgt het bij eten.</li>
+          <?php
+          foreach ($riddles as $riddle) {
+            echo "<li>" . htmlspecialchars($riddle['hint']) . "</li>";
+            }
+          ?>
         </ul>
       </div>
     </div>
