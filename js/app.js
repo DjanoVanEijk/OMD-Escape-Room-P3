@@ -38,6 +38,7 @@ function closeModal() {
 }
 // Punten //
 let punten = 0;
+
 // Deze functie controleert of het ingevoerde antwoord correct is
 function checkAnswer() {
   // Haal het antwoord van de gebruiker op uit het invoerveld en verwijder onnodige spaties
