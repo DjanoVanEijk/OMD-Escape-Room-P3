@@ -16,6 +16,7 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overzicht Pagina</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/app.js" defer></script>
 </head>
 <body>
     <h1>Overzicht Pagina</h1>
@@ -24,7 +25,6 @@ try {
 
 
 
-    <script src="../js/app.js"></script>
 </body>
 </html>
 
