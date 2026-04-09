@@ -105,7 +105,7 @@ a {
 
 .room3box1 { top: 380px; left: 300px; width: 180px; height: 150px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room3box1:hover{ opacity: 0.5;}
-.room3box2 { top: 670px; left: 750px; width: 550px; height: 150px; border-radius: 100px; opacity: 0; transition: 0.5s;}
+.room3box2 { top: 670px; left: 850px; width: 550px; height: 150px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room3box2:hover{ opacity: 0.5;}
 .room3box3 { top: 560px; left: 110px; width: 180px; height: 100px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room3box3:hover{ opacity: 0.5;}

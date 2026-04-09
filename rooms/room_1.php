@@ -25,7 +25,7 @@ try {
         if (isset($_POST['teamname'])) {
         echo "Team: $teamnaam";
         };
-        ?>
+      ?>
     </h1>  
     <div class="hints-drop">
       <h1 class="info">?</h1>
