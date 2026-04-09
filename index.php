@@ -1,6 +1,18 @@
+<?php
+  $server = "localhost"; 
+  $username = "root";
+  $password = "";  //macbook gebruikers vullen bij wachtwoord "root" in.
+  $db = "escape-room"; //pas dit aan indien de naam van jullie database anders is
+
+  try {
+    $db_connection = new PDO("mysql:host=$server; dbname=$db", $username, $password);
+    $db_connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  } catch (PDOException $e) {
+    echo "Verbinding mislukt" . $e->getMessage();
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +54,7 @@
         <?php 
           $teamnaam = $_POST['teamname'] ?? '';
           if (isset($_POST['teamname'])) {
-          echo "Vul het eerst in!";    
+            echo "Vul het eerst in!";    
           };
           if (isset($_POST['name1']) && isset($_POST['name2']) && isset($_POST['name3'])) {
             echo "Vul het eerst in!";

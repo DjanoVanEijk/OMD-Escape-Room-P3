@@ -11,14 +11,12 @@ try {
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Escape Room 1</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body class="cell">
   <div class="flex2">
     <h1 class="info" id="timers">0:00</h1> 
@@ -42,27 +40,24 @@ try {
       </div>
     </div>
   </div>
-    <div class="playersName">
-      <h2>
-        <?php
-          if (isset($_POST['name1']))
-          {
-            echo "Speler 1: " . $_POST['name1'];
-          }
-          if (isset($_POST['name2']))
-          {
-            echo " | Speler 2: " . $_POST['name2'];
-          }
-          if (isset($_POST['name3']))
-          {
-            echo " | Speler 3: " . $_POST['name3'];
-          }
-        ?>
-      </h2>
-    </div>
-  
-
-  
+  <div class="playersName">
+    <h2>
+      <?php
+        if (isset($_POST['name1']))
+        {
+          echo "Speler 1: " . $_POST['name1'];
+        }
+        if (isset($_POST['name2']))
+        {
+          echo " | Speler 2: " . $_POST['name2'];
+        }
+        if (isset($_POST['name3']))
+        {
+          echo " | Speler 3: " . $_POST['name3'];
+        }
+      ?>
+    </h2>
+  </div>
   <div id="overlayverlies">
     <div class="organiseverlies">
       <img class="verliesimg" src="../img/verliesimg.jpg" alt="Game Over">
