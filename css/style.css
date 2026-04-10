@@ -150,8 +150,11 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgb(75, 75, 75);
+  background: rgba(0, 0, 0, 0.481);
   padding: 20px;
+  border-color: white;
+  border-width: 2px;
+  border-style:groove;
   border-radius: 10px;
   display: none;
   width: 300px;
