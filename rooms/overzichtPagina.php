@@ -19,12 +19,15 @@ try {
     <script src="../js/app.js" defer></script>
 </head>
 <body class="overpage">
-    <h1>Overzicht Pagina</h1>
+  <div class="logo">
+    <img src="../img/footagecrate-4k-rectangular-stamp-guilty@2X.webp" alt="">
+  </div>
+    <h1 class="overh1">Overzicht</h1>
     <table width="100%">
       <tr>
-        <th>Player</th>
-        <th>Rating</th>
-        <th>Review</th>
+        <th class="border1">Player</th>
+        <th class="border2">Rating</th>
+        <th class="border3">Review</th>
       </tr>
       <tr>
         <td></td>
@@ -49,7 +52,7 @@ try {
         <td></td>
       </tr>
     </table>
-    <a href="../index.php"><button>Terug naar startpagina</button></a>
+    <a href="../index.php" class="overbtn"><button>Terug naar startpagina</button></a>
 </body>
 </html>
 
