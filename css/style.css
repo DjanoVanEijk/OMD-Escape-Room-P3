@@ -243,32 +243,30 @@ button {
 
 /* winpagina */
 
-.windiv {
+.winflex{
   display: flex;
-  flex-direction: row;
-  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  margin: auto;
+  gap:10px;
+}
+
+.wincontainer {
+ background: rgba(0, 0, 0, 0.481);
+  padding: 20px;
+  border-color: white;
+  border-width: 2px;
+  border-style:groove;
+  border-radius: 10px;
+  height: 400px;
+  flex: 1;
+  max-width: 400px;
 }
 
 .winimg {
-  display: flex;
-  justify-content: center;
-  width: 40%;
-  height: 99%;
-  margin-left: 80px;
-  margin-top: 100px;
-  border-radius: 50px;
-}
-
-.tekstdeel{
-  display: flex;
-  flex-direction: column;
-  gap: 25px
-}
-
-.winp{
-  display: flex;
-  align-items: center;
-  margin-top: 70px;
+  width: 300px;
+  height: 300px;
 }
 
 .formreview{
@@ -281,6 +279,9 @@ button {
   border-width: 2px;
   border-style:groove;
   border-radius: 10px;
+  height: 400px;
+  flex: 1;
+  max-width: 400px;
 }
 
 .review{
@@ -300,6 +301,7 @@ button {
   border-radius: 5px;
   border-color: black;
   box-shadow: 5px 10px #88888860;
+  resize: none;;
 }
 
 #reviewsub{
