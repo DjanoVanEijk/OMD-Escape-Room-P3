@@ -10,6 +10,7 @@
   } catch (PDOException $e) {
     echo "Verbinding mislukt" . $e->getMessage();
   }
+  
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -110,7 +110,7 @@ a {
 
 .room3box1 { top: 650px; left: 865px; width: 100px; height: 100px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room3box1:hover{ opacity: 0.5;}
-.room3box2 { top: 470px; left: 1185px; width: 150px; height: 150px; border-radius: 100px; opacity: 0; transition: 0.5s;}
+.room3box2 { top: 470px; left: 1185px; width: 550px; height: 150px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room3box2:hover{ opacity: 0.5;}
 .room3box3 { top: 360px; left: 290px; width: 200px; height: 200px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room3box3:hover{ opacity: 0.5;}
@@ -350,4 +350,23 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+/*overzicht tabel pagina*/
+
+.table {
+  width: 80%;
+  margin: 50px auto;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
 }

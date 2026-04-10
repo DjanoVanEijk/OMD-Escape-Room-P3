@@ -20,11 +20,36 @@ try {
 </head>
 <body>
     <h1>Overzicht Pagina</h1>
+    <table width="100%" border="5px">
+      <tr>
+        <th>Player</th>
+        <th>Rating</th>
+        <th>Review</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <?php $rating = $_POST['rating'] ?? '';
+          if (isset($_POST['rating'])) {
+            echo "$rating";
+          };
+          ?>
+        </td>
+        <td>
+          <?php $description = $_POST['description'] ?? '';
+          if (isset($_POST['description'])) {
+            echo "$description";
+          };
+          ?>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
     <a href="../index.php"><button>Terug naar startpagina</button></a>
-
-
-
-
 </body>
 </html>
 
