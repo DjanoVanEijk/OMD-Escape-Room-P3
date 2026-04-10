@@ -347,16 +347,21 @@ button {
   align-items: center;
 }
 
-/* overzicht pagina */
 
-.overpage{
-  background-color: rgb(153, 153, 153);
+/*overzicht tabel pagina*/
+
+.table {
+  width: 80%;
+  margin: 50px auto;
+  border-collapse: collapse;
 }
 
-table, th, td {
-  border: 1px solid;
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
-th{
-  text-align: start;
+.table th {
+  background-color: #f2f2f2;
 }
