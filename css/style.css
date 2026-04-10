@@ -346,3 +346,17 @@ button {
   flex-direction: column;
   align-items: center;
 }
+
+/* overzicht pagina */
+
+.overpage{
+  background-color: rgb(153, 153, 153);
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+th{
+  text-align: start;
+}

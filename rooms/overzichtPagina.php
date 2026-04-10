@@ -18,9 +18,9 @@ try {
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/app.js" defer></script>
 </head>
-<body>
+<body class="overpage">
     <h1>Overzicht Pagina</h1>
-    <table width="100%" border="5px">
+    <table width="100%">
       <tr>
         <th>Player</th>
         <th>Rating</th>
