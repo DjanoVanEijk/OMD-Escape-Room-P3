@@ -357,6 +357,23 @@ button {
 
 /*overzicht tabel pagina*/
 
+.overpage{
+  background-image: url("../img/Background.jpg");
+  background-repeat: no-repeat;
+  background-size:100%;
+  color: white;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+}
+
+.overh1{
+  display: flex;
+  justify-content: center;
+}
+
 table {
   width: 80%;
   margin: 50px auto;
@@ -370,5 +387,26 @@ table th, table td {
 }
 
 table th {
-  background-color: #f2f2f2;
+  background-color: #4b4b4b;
+  border: none;
+}
+
+.border1{
+  border-top-left-radius: 10px;
+  border-right: none;
+}
+
+.border2{
+  border-right: none;
+  border-left: none;
+}
+
+.border3{
+  border-top-right-radius: 10px;
+  border-left: none;
+}
+
+.overbtn{
+  display: flex;
+  justify-content: center;
 }
