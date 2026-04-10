@@ -150,8 +150,11 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgb(75, 75, 75);
+  background: rgba(0, 0, 0, 0.481);
   padding: 20px;
+  border-color: white;
+  border-width: 2px;
+  border-style:groove;
   border-radius: 10px;
   display: none;
   width: 300px;
@@ -318,7 +321,6 @@ button {
   position: fixed; 
   width: 100%; 
   height: 100%; 
-  margin-top: 125px;
   top: 0;
   left: 0;
   right: 0;
@@ -330,26 +332,27 @@ button {
 }
 
 .verliesimg{
-  display: flex;
-  justify-content: center;
-  width: 30%;
-  height: 100%;
-  border-radius: 30px;
-  margin-left: 100px;
-  filter: contrast(200%);
-  opacity: 70%;
+  width: 400px;
+  height: 300px;
+  border-radius: 50px;
 }
 
-.verliesp{
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
-}
-
-.organiseverlies{
+.verliesflex{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.verlies-container {
+  background: rgba(0, 0, 0, 0.481);
+  border-color: white;
+  border-width: 2px;
+  border-style: groove;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 500px;
 }
 
 /*overzicht tabel pagina*/

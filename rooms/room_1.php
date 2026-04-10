@@ -59,10 +59,12 @@ try {
     </h2>
   </div>
   <div id="overlayverlies">
-    <div class="organiseverlies">
-      <img class="verliesimg" src="../img/verliesimg.jpg" alt="Game Over">
-      <p class="verliesp">De tijd is om! Je bent er niet in geslaagd te ontsnappen</p>
-      <a href="room_1.php"><button>Play again</button></a>
+    <div class="verliesflex">
+      <div class="verlies-container">
+        <img class="verliesimg" src="../img/verliesimg.png" alt="Game Over">
+        <p >De tijd is om! Je bent er niet in geslaagd te ontsnappen</p>
+        <a href="room_1.php"><button>Play again</button></a>
+      </div>
     </div>
   </div>
 
