@@ -21,7 +21,7 @@ try {
 
 <body class="office">
   <div class="flex2">
-    <h1 class="info" id="timers">0:00</h1> 
+    <h1 class="info" id="timers">00:00</h1> 
     <h1 class=info>
       <?php $teamnaam = $_POST['teamname'] ?? '';
         if (isset($_POST['teamname'])) {
@@ -73,7 +73,6 @@ try {
     <div class="box room2box<?php echo $index + 1; ?>" onclick="openModal(<?php echo $index; ?>)"
       data-index="<?php echo $index; ?>" data-riddle="<?php echo htmlspecialchars($riddle['riddle']); ?>"
       data-answer="<?php echo htmlspecialchars($riddle['answer']); ?>">
-      Box <?php echo $index + 1; ?>
     </div>
     <?php endforeach; ?>
   </div>

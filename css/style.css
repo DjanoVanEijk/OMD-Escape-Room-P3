@@ -89,25 +89,30 @@ a {
   cursor: pointer;
 }
 
+.box.answered {
+ background-image: url(../img/checkmark.png);
+ cursor: default;
+}
+
 .room1box1 { top: 200px; left: 930px; width: 300px; height: 300px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room1box1:hover{ opacity: 0.5;}
-.room1box2 { top: 550px; left: 1020px; width: 100px; height: 130px; border-radius: 100px; opacity: 0; transition: 0.5s;}
+.room1box2 { top: 550px; left: 1020px; width: 100px; height: 100px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room1box2:hover{ opacity: 0.5;}
-.room1box3 { top: 490px; left: 500px; width: 100px; height: 100px; border-radius: 100px; opacity: 0; transition: 0.5s;}
+.room1box3 { top: 470px; left: 490px; width: 150px; height: 150px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room1box3:hover{ opacity: 0.5;}
 
-.room2box1 { top: 280px; left: 1000px; width: 280px; height: 180px; border-radius: 100px; opacity: 0; transition: 0.5s;}
+.room2box1 { top: 280px; left: 1090px; width: 200px; height: 200px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room2box1:hover{ opacity: 0.5;}
-.room2box2 { top: 600px; left: 900px; width: 380px; height: 180px; border-radius: 100px; opacity: 0; transition: 0.5s;}
+.room2box2 { top: 590px; left: 900px; width: 150px; height: 150px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room2box2:hover{ opacity: 0.5;}
-.room2box3 { top: 260px; left: 500px; width: 160px; height: 200px; border-radius: 100px; opacity: 0; transition: 0.5s;}
+.room2box3 { top: 260px; left: 480px; width: 200px; height: 200px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room2box3:hover{ opacity: 0.5;}
 
-.room3box1 { top: 380px; left: 300px; width: 180px; height: 150px; border-radius: 100px; opacity: 0; transition: 0.5s;}
+.room3box1 { top: 650px; left: 865px; width: 100px; height: 100px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room3box1:hover{ opacity: 0.5;}
-.room3box2 { top: 670px; left: 850px; width: 550px; height: 150px; border-radius: 100px; opacity: 0; transition: 0.5s;}
+.room3box2 { top: 470px; left: 1185px; width: 150px; height: 150px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room3box2:hover{ opacity: 0.5;}
-.room3box3 { top: 560px; left: 110px; width: 180px; height: 100px; border-radius: 100px; opacity: 0; transition: 0.5s;}
+.room3box3 { top: 360px; left: 290px; width: 200px; height: 200px; border-radius: 100px; opacity: 0; transition: 0.5s;}
 .room3box3:hover{ opacity: 0.5;}
 
 #overform {
