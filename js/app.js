@@ -10,6 +10,11 @@ function openModal(index) {
   // Zoek het element met de class 'box' en het bijbehorende data-index
   let box = document.querySelector(`.box[data-index='${index}']`);
 
+  // Controleer of de vraag al beantwoord is
+  if (box.classList.contains('answered')) {
+    return; // Sluit de functie af als de vraag al beantwoord is
+  }
+
   // Haal de vraag en het juiste antwoord uit de dataset van de box
   let riddleText = box.dataset.riddle;
   let correctAnswer = box.dataset.answer;
@@ -19,6 +24,9 @@ function openModal(index) {
 
   // Zet het correcte antwoord in de modal, zodat we het later kunnen vergelijken
   document.getElementById('modal').dataset.answer = correctAnswer;
+
+  // Sla de huidige box index op in de modal zodat we deze later kunnen gebruiken
+  document.getElementById('modal').dataset.boxIndex = index;
 
   // Maak het antwoordveld leeg
   document.getElementById('answer').value = '';
@@ -57,6 +65,10 @@ function checkAnswer() {
     feedback.style.color = 'green';
     punten = punten + 1;
     
+    // Voeg de 'answered' class toe aan de box zodat deze niet opnieuw geopend kan worden
+    let boxIndex = document.getElementById('modal').dataset.boxIndex;
+    let box = document.querySelector(`.box[data-index='${boxIndex}']`);
+    box.classList.add('answered');
 
     // Sluit de modal na 1 seconde
     setTimeout(closeModal, 1000);
@@ -68,11 +80,17 @@ function checkAnswer() {
   }
   console.log(punten);
   // Ga naar volgende page //
+ 
+function nextPage() {
+  document.getElementById('nextpage').style.display = 'block';
+  document.getElementById('endroom').style.display = 'block';
+}
 
   if(punten === 3){
-    document.getElementById('nextpage').style.display = 'block';
-    document.getElementById('endroom').style.display = 'block';
+    setTimeout(nextPage, 1000);
   }
+
+  let boxes = document.querySelectorAll('.box');
 }
 
 // Timer functionaliteit
