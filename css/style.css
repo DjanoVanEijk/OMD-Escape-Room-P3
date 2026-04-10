@@ -352,21 +352,20 @@ button {
   align-items: center;
 }
 
-
 /*overzicht tabel pagina*/
 
-.table {
+table {
   width: 80%;
   margin: 50px auto;
   border-collapse: collapse;
 }
 
-.table th, .table td {
+table th, table td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
 }
 
-.table th {
+table th {
   background-color: #f2f2f2;
 }
