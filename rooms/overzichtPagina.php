@@ -25,11 +25,15 @@ try {
     <h1 class="overh1">Overzicht</h1>
     <table width="100%">
       <tr>
-        <th class="border1">Player</th>
+        <th class="border1">Team</th>
+        <th class="border2">Player</th>
+        <th class="border2">Score</th>
         <th class="border2">Rating</th>
         <th class="border3">Review</th>
       </tr>
       <tr>
+        <td></td>
+        <td></td>
         <td></td>
         <td>
           <?php $rating = $_POST['rating'] ?? '';
@@ -47,6 +51,8 @@ try {
         </td>
       </tr>
       <tr>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
