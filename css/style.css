@@ -393,6 +393,10 @@ table th {
   border: none;
 }
 
+table td {
+  background-color: grey;
+}
+
 .border1{
   border-top-left-radius: 10px;
   border-right: none;
