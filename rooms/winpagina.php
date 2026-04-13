@@ -24,27 +24,27 @@
 <body class="winpagina">
     <h1>Je hebt gewonnen!</h1>
     <div class="winflex">
-    <div class="wincontainer">
-    <img class="winimg" src="../img/winimg.png" alt="afbeelding">
-    <h2 class="winp">Na een gevaarlijke reis bent je er eindelijk in geslaagd te ontsnappen.</h2>
-    </div>
+        <div class="wincontainer">
+            <img class="winimg" src="../img/winimg.png" alt="afbeelding">
+            <h2 class="winp">Na een gevaarlijke reis bent je er eindelijk in geslaagd te ontsnappen.</h2>
+        </div>
 
-    <form action="overzichtPagina.php" method="post" class="formreview">
-    <h2 class="review">Review</h2>
-    <input type="number" name="rating" id="rating" placeholder="star rating" max=5 min=0>
-    <textarea type="text" name="description" id="description" placeholder="description"></textarea>
-    <input type="submit" value="Submit" id="reviewsub">
-    <?php 
-    $rating = $_POST['rating'] ?? '';
-    if (isset($_POST['rating'])) {
-    echo "Vul het eerst in!";    
-    };
-    $description = $_POST['description'] ?? '';
-    if (isset($_POST['description'])) {
-    echo "Vul het eerst in!";
-    }
-    ?>
-    </form>
+        <form action="overzichtPagina.php" method="post" class="formreview">
+            <h2 class="review">Review</h2>
+            <input type="number" name="rating" id="rating" placeholder="star rating" max=5 min=0>
+            <textarea type="text" name="description" id="description" placeholder="description"></textarea>
+            <input type="submit" value="Submit" id="reviewsub">
+            <?php 
+                $rating = $_POST['rating'] ?? '';
+                if (isset($_POST['rating'])) {
+                echo "Vul het eerst in!";    
+                };
+                $description = $_POST['description'] ?? '';
+                if (isset($_POST['description'])) {
+               echo "Vul het eerst in!";
+                }
+            ?>
+        </form>
     </div>
 </body>
 </html>
