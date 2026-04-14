@@ -10,12 +10,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['current_team_id']))
     $review = $_POST['description'] ?? 'Geen review';
     $team_id = $_SESSION['current_team_id'];
 
-    $sql = "UPDATE overzicht SET Rating = :rating, Review = :review WHERE id = :id";
+    $sql = "UPDATE overzicht SET Rating = :Rating, Review = :Review WHERE id = :id";
     $stmt = $db_connection->prepare($sql);
     
     $result = $stmt->execute([
-        ':rating' => $rating,
-        ':review' => $review,
+        ':Rating' => $rating,
+        ':Review' => $review,
         ':id'     => $team_id
     ]);
 
