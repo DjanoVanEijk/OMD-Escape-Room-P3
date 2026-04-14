@@ -2,10 +2,10 @@
 require_once('../dbcon.php');
 
 try {
-  $stmt = $db_connection->query("SELECT * FROM riddles WHERE roomId = 1");
-  $riddles = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $stmt = $db_connection->query("SELECT * FROM overzicht");
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
-  die("Databasefout: " . $e->getMessage());
+    die("Databasefout: " . $e->getMessage());
 }
 ?>
 
@@ -31,32 +31,21 @@ try {
         <th class="border2">Rating</th>
         <th class="border3">Review</th>
       </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>
-          <?php $rating = $_POST['rating'] ?? '';
-          if (isset($_POST['rating'])) {
-            echo "$rating";
-          };
-          ?>
-        </td>
-        <td>
-          <?php $description = $_POST['description'] ?? '';
-          if (isset($_POST['description'])) {
-            echo "$description";
-          };
-          ?>
-        </td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
+      <?php if (!empty($results)): ?>
+        <?php foreach ($results as $row): ?>
+          <tr>
+            <td><?php echo htmlspecialchars($row['Team']); ?></td>
+            <td><?php echo htmlspecialchars($row['Player']); ?></td>
+            <td><?php echo htmlspecialchars($row['Score']); ?></td>
+            <td><?php echo htmlspecialchars($row['Rating']); ?></td>
+            <td><?php echo htmlspecialchars($row['Review']); ?></td>
+          </tr>
+        <?php endforeach; ?>
+      <?php else: ?>
+        <tr>
+          <td colspan="5">Geen resultaten gevonden.</td>
+        </tr>
+      <?php endif; ?>
     </table>
     <a href="../index.php" class="overbtn"><button>Terug naar startpagina</button></a>
 </body>
