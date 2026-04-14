@@ -61,7 +61,7 @@
             echo "Vul het eerst in!";
           }
         ?>
-      </form>
+      </action=>
     </section>
 
   </section>

@@ -1,4 +1,9 @@
+
+
+
+
 <?php
+    session_start();
     $server = "localhost"; 
     $username = "root";
     $password = "";  //macbook gebruikers vullen bij wachtwoord "root" in.
@@ -29,21 +34,11 @@
             <h2 class="winp">Na een gevaarlijke reis bent je er eindelijk in geslaagd te ontsnappen.</h2>
         </div>
 
-        <form action="overzichtPagina.php" method="post" class="formreview">
+        <form action="../admin/add_review.php" method="post" class="formreview">
             <h2 class="review">Review</h2>
             <input type="number" name="rating" id="rating" placeholder="star rating" max=5 min=0>
             <textarea type="text" name="description" id="description" placeholder="description"></textarea>
             <input type="submit" value="Submit" id="reviewsub">
-            <?php 
-                $rating = $_POST['rating'] ?? '';
-                if (isset($_POST['rating'])) {
-                echo "Vul het eerst in!";    
-                };
-                $description = $_POST['description'] ?? '';
-                if (isset($_POST['description'])) {
-               echo "Vul het eerst in!";
-                }
-            ?>
         </form>
     </div>
 </body>
