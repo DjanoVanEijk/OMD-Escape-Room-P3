@@ -8,20 +8,22 @@ require_once('../dbcon.php');
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['current_team_id'])) {
     $rating = $_POST['rating'] ?? 0;
     $review = $_POST['description'] ?? 'Geen review';
-    $team_id = $_SESSION['current_team_id']; 
+    $team_id = $_SESSION['current_team_id'];
 
-    // We updaten specifiek de rij van dit team
     $sql = "UPDATE overzicht SET Rating = :rating, Review = :review WHERE id = :id";
-    
     $stmt = $db_connection->prepare($sql);
-
-    $stmt->execute([
+    
+    $result = $stmt->execute([
         ':rating' => $rating,
         ':review' => $review,
         ':id'     => $team_id
     ]);
+
+    // Als de update is gelukt, halen we het ID uit de sessie (optioneel)
+    if($result) {
+        unset($_SESSION['current_team_id']); 
+    }
 }
 
 header("Location: ../rooms/overzichtPagina.php");
 exit();
-?>

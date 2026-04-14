@@ -21,17 +21,18 @@
     
     // 3. De gegevens daadwerkelijk versturen
     $stmt->execute([
-        ':team'   => $team,
-        ':player' => $all_players,
-        ':score'  => $score,
-        ':rating' => $rating,
-        ':review' => $review
-    ]);
+    ':team'   => $team,
+    ':player' => $all_players,
+    ':score'  => $score,
+    ':rating' => $rating,
+    ':review' => $review
+]);
 
-    $_SESSION['current_team_id'] = $db_connection->lastInsertId();
+// BELANGRIJK: Sla het ID op in de sessie
+$_SESSION['current_team_id'] = $db_connection->lastInsertId();
 
-    // 4. Terugsturen naar de overzichtspagina
-    header("Location: ../rooms/overzichtPagina.php");
-    exit();
+// Ga naar de eerste kamer
+header("Location: ../rooms/overzichtPagina.php");
+exit();
 }
 ?>
