@@ -12,10 +12,10 @@ try {
 }
 
 foreach ($overzicht as $review) {
-  echo htmlspecialchars($review['Team']) . "<br>";
-  echo htmlspecialchars($review['Player']) . "<br>";
-  echo htmlspecialchars($review['Score']) . "<br>";
-  echo htmlspecialchars($review['Rating']) . "<br>";
-  echo htmlspecialchars($review['Review']) . "<br>";
+  echo htmlspecialchars($review['team']) . "<br>";
+  echo htmlspecialchars($review['player']) . "<br>";
+  echo htmlspecialchars($review['score']) . "<br>";
+  echo htmlspecialchars($review['rating']) . "<br>";
+  echo htmlspecialchars($review['review']) . "<br>";
 }
 ?>

@@ -1,7 +1,15 @@
-
 <?php
 session_start();
 // Geen database connectie hier nodig!
+require_once('../dbcon.php');
+
+try {
+    $stmt = $db_connection->query("SELECT * FROM overzicht");
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    die("Databasefout: " . $e->getMessage());
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
