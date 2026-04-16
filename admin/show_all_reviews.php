@@ -16,6 +16,6 @@ foreach ($overzicht as $review) {
   echo htmlspecialchars($review['Player']) . "<br>";
   echo htmlspecialchars($review['Score']) . "<br>";
   echo htmlspecialchars($review['Rating']) . "<br>";
-  echo htmlspecialchars($review['Review']) . "<br>""<br>";
+  echo htmlspecialchars($review['Review']) . "<br>";
 }
 ?>
