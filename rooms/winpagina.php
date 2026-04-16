@@ -1,6 +1,4 @@
 <?php
-session_start();
-// Geen database connectie hier nodig!
 require_once('../dbcon.php');
 
 try {
@@ -8,10 +6,10 @@ try {
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
     die("Databasefout: " . $e->getMessage());
-}
+};
 
 $sql = "INSERT INTO overzicht (rating, review)
-VALUES (rating, description)";
+    VALUES (rating, description)"; 
 
 ?>
 <!DOCTYPE html>
@@ -29,12 +27,22 @@ VALUES (rating, description)";
             <h2 class="winp">Na een gevaarlijke reis bent je er eindelijk in geslaagd te ontsnappen.</h2>
         </div>
 
-        <form action="../admin/add_review.php" method="post" class="formreview">
+        <form action="overzichtPagina.php" method="post" class="formreview">
             <h2 class="review">Review</h2>
             <input type="number" name="rating" value="rating" id="rating" placeholder="star rating" max="5" min="0">
             <textarea name="description" value="description" id="description" placeholder="Review met feedback en moeilijkheid"></textarea>
             <input type="submit" value="Submit" id="reviewsub">
-        </form>
+            <?php 
+                $rating = $_POST['rating'] ?? '';
+                if (isset($_POST['rating'])) {
+                    echo "Vul het eerst in!";    
+                };
+                $description = $_POST['description'] ?? '';
+                if (isset($_POST['description'])) {
+                    echo "Vul het eerst in!";    
+                };
+            ?>
+        </form>3
     </div>
 </body>
 </html>
