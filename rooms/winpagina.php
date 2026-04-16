@@ -10,6 +10,9 @@ try {
     die("Databasefout: " . $e->getMessage());
 }
 
+$sql = "INSERT INTO overzicht (rating, review)
+VALUES (rating, description)";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

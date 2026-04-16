@@ -14,7 +14,7 @@
     $review = $_POST['review']?? 'Geen review';
 
     // 2. De SQL query voorbereiden (veilig tegen SQL-injectie)
-    $sql = "INSERT INTO overzicht (Team, Player, Score, Rating, Review) 
+    $sql = "INSERT INTO overzicht (team, player, score, rating, review) 
             VALUES (:team, :player, :score, :rating, :review)";
     
     $stmt = $db_connection->prepare($sql);
