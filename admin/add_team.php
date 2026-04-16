@@ -26,10 +26,10 @@
     ':score'  => $score,
 ]);
 
-// BELANGRIJK: Sla het ID op in de sessie
+
 $_SESSION['current_team_id'] = $db_connection->lastInsertId();
 
-// Ga naar de eerste kamer
+
 header("Location: ../rooms/overzichtPagina.php");
 exit();
 }
