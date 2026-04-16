@@ -14,7 +14,7 @@
     $review = $_POST['review']?? 'Geen review';
 
     // 2. De SQL query voorbereiden (veilig tegen SQL-injectie)
-    $sql = "INSERT INTO overzicht (Team, Player, Score, Rating, Review) 
+    $sql = "INSERT INTO overzicht (team, player, score, rating, review) 
             VALUES (:team, :player, :score, :rating, :review)";
     
     $stmt = $db_connection->prepare($sql);
@@ -28,10 +28,10 @@
     ':review' => $review
 ]);
 
-// BELANGRIJK: Sla het ID op in de sessie
+
 $_SESSION['current_team_id'] = $db_connection->lastInsertId();
 
-// Ga naar de eerste kamer
+
 header("Location: ../rooms/overzichtPagina.php");
 exit();
 }
