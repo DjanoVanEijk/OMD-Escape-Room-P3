@@ -21,7 +21,7 @@ session_start();
         <form action="../admin/add_review.php" method="post" class="formreview">
             <h2 class="review">Review</h2>
             <input type="number" name="rating" id="rating" placeholder="star rating" max="5" min="0">
-            <textarea name="description" id="description" placeholder="description"></textarea>
+            <textarea name="description" id="description" placeholder="Review met feedback en moeilijkheid"></textarea>
             <input type="submit" value="Submit" id="reviewsub">
         </form>
     </div>
