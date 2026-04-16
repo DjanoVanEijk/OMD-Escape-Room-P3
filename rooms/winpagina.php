@@ -10,9 +10,6 @@ try {
     die("Databasefout: " . $e->getMessage());
 }
 
-INSERT INTO table_name (rating, review)
-VALUES (rating, description);
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
