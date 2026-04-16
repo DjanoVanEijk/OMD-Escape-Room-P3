@@ -29,7 +29,7 @@ try {
         <th class="border2">Player</th>
         <th class="border2">Score</th>
         <th class="border2">Rating</th>
-        <th class="border3">Review</th>
+        <th class="border3">Review met feedback en moeilijkheid</th>
       </tr>
       <?php if (!empty($results)): ?>
         <?php foreach ($results as $row): ?>
