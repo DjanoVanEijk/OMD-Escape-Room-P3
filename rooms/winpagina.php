@@ -11,8 +11,6 @@ require_once('../dbcon.php');
 $stmtTeam = $db_connection->query("SELECT team, players FROM team");
 $teamData = $stmtTeam->fetch(PDO::FETCH_ASSOC);
 
-//$sql = "INSERT INTO overzicht (rating, review)
-    //VALUES (rating, review)"; 
 
 ?>
 <!DOCTYPE html>
@@ -56,14 +54,6 @@ $teamData = $stmtTeam->fetch(PDO::FETCH_ASSOC);
                 if (isset($_POST['players'])) {
                     echo "Maak een team aan!";    
                 };
-                $stmt = $db_connection->prepare("INSERT INTO overzicht (rating, review, team, players, time) VALUES (:rating, :review, :team, :players, :time)");
-                $stmt->execute([
-                    ':rating' => $rating,
-                    ':review' => $review,
-                    ':team' => $team,
-                    ':players' => $players,
-                    ':time' => $duration
-                ]);
             ?>
         </form>
     </div>
