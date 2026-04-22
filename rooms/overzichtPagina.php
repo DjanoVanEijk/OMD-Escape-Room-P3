@@ -20,7 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-
 try {
     $stmt = $db_connection->query("SELECT * FROM overzicht");
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
