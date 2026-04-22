@@ -9,7 +9,7 @@ try {
 };
 
 //$sql = "INSERT INTO overzicht (rating, review)
-    //VALUES (rating, descriptions)"; 
+    //VALUES (rating, review)"; 
 
 ?>
 <!DOCTYPE html>
@@ -30,18 +30,18 @@ try {
         <form action="overzichtPagina.php" method="post" class="formreview">
             <h2 class="review">Review</h2>
             <input type="number" name="rating" value="rating" id="rating" placeholder="star rating" max="5" min="0">
-            <textarea name="descriptions" value="descriptions" id="descriptions" placeholder="Review met feedback en moeilijkheid"></textarea>
+            <textarea name="review" value="review" id="review" placeholder="Review"></textarea>
             <input type="submit" value="Submit" id="reviewsub">
             <?php 
                 $rating = $_POST['rating'] ?? '';
                 if (isset($_POST['rating'])) {
                     echo "Vul het eerst in!";    
                 };
-                $descriptions = $_POST['descriptions'] ?? '';
-                if (isset($_POST['descriptions'])) {
+                $review = $_POST['review'] ?? '';
+                if (isset($_POST['review'])) {
                     echo "Vul het eerst in!";    
                 };
-                $stmt = $db_connection->prepare("INSERT INTO overzicht (rating, review) VALUES (:rating, :descriptons)");
+                $stmt = $db_connection->prepare("INSERT INTO overzicht (rating, review) VALUES (:rating, :review)");
                 $stmt->execute([
                     ':rating' => $rating,
                     ':review' => $review

@@ -9,21 +9,21 @@
     // 1. De gegevens uit het formulier ophalen
     $team = $_POST['teamname'];
     $all_players = $_POST['name1'] . ", " . $_POST['name2'] . ", " . $_POST['name3'];
-    $tijd = $_POST['tijd']?? 0;
+    $time = $_POST['time']?? 0;
     $rating = $_POST['rating']?? 0;
     $review = $_POST['review']?? 'Geen review';
 
     // 2. De SQL query voorbereiden (veilig tegen SQL-injectie)
-    $sql = "INSERT INTO overzicht (team, player, tijd) 
-            VALUES (:team, :player, :tijd)";
+    $sql = "INSERT INTO overzicht (team, players, time) 
+            VALUES (:team, :players, :time)";
     
     $stmt = $db_connection->prepare($sql);
     
     // 3. De gegevens daadwerkelijk versturen
     $stmt->execute([
     ':team'   => $team,
-    ':player' => $all_players,
-    ':tijd'  => $tijd,
+    ':players' => $all_players,
+    ':time'  => $time,
 ]);
 
 

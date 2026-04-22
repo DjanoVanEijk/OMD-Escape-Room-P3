@@ -3,16 +3,16 @@ require_once('../dbcon.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $rating = $_POST['rating'] ?? '';
-    $descriptions = $_POST['descriptions'] ?? '';
+    $review = $_POST['review'] ?? '';
 
-    if (empty($rating) || empty($descriptions)) {
+    if (empty($rating) || empty($review)) {
         echo "Vul alle velden in!";
     } else {
         try {
             $stmt = $db_connection->prepare("INSERT INTO overzicht (rating, review) VALUES (:rating, :review)");
             $stmt->execute([
                 ':rating' => $rating,
-                ':review' => $descriptions
+                ':review' => $review
             ]);
             header("Location: overzichtPagina.php");
             exit();
@@ -47,8 +47,8 @@ try {
     <table width="100%">
       <tr>
         <th class="border1">Team</th>
-        <th class="border2">Player</th>
-        <th class="border2">Tijd</th>
+        <th class="border2">Players</th>
+        <th class="border2">Time</th>
         <th class="border2">Rating</th>
         <th class="border3">Review met feedback en moeilijkheid</th>
       </tr>
@@ -56,8 +56,8 @@ try {
         <?php foreach ($results as $row): ?>
           <tr>
             <td><?php echo htmlspecialchars($row['team']); ?></td>
-            <td><?php echo htmlspecialchars($row['player']); ?></td>
-            <td><?php echo htmlspecialchars($row['tijd']); ?></td>
+            <td><?php echo htmlspecialchars($row['players']); ?></td>
+            <td><?php echo htmlspecialchars($row['time']); ?></td>
             <td><?php echo htmlspecialchars($row['rating']); ?></td>
             <td><?php echo htmlspecialchars($row['review']); ?></td>
           </tr>

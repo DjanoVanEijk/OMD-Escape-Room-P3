@@ -1,8 +1,8 @@
 <?php
   $server = "localhost"; 
   $username = "root";
-  $password = "";  //macbook gebruikers vullen bij wachtwoord "root" in.
-  $db = "escape-room"; //pas dit aan indien de naam van jullie database anders is
+  $password = "";  
+  $db = "escape-room";
 
   try {
     $db_connection = new PDO("mysql:host=$server; dbname=$db", $username, $password);
@@ -12,15 +12,35 @@
   }
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // 1. De gegevens uit het formulier ophalen
+
+  if (
+    !empty($_POST['teamname']) &&
+    !empty($_POST['name1']) &&
+    !empty($_POST['name2']) &&
+    !empty($_POST['name3'])
+  ) {
     $team = $_POST['teamname'];
     $all_players = $_POST['name1'] . ", " . $_POST['name2'] . ", " . $_POST['name3'];
-    $tijd = $_POST['tijd']?? 0;
-  }
+    $tijd = $_POST['tijd'] ?? 0;
 
-  $sql = "INSERT INTO overzicht (team, player, tijd) 
-          VALUES (:team, :player, :tijd)";
-  
+    $sql = "INSERT INTO overzicht (team, players, tijd) 
+            VALUES (:team, :players, :tijd)";
+    
+    $stmt = $db_connection->prepare($sql);
+    $stmt->execute([
+      ':team' => $team,
+      ':players' => $all_players,
+      ':tijd' => $tijd
+    ]);
+
+    header("Location: rooms/room_1.php");
+    exit();
+
+  } else {
+    echo "Vul alle velden in!";
+  }
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,7 +64,7 @@
   <section id="overform" onclick="closeModal()">
 
     <section class="formmodal" id="formmodal">
-      <form action="rooms/room_1.php" method="post">
+      <form method="post">
         <div class="teamname1">
           <h2>Teamnaam:</h2>
           <input type="text" id="teamname" name="teamname" required>
@@ -63,15 +83,12 @@
         </div>
         <input class="subform" type="submit" value="Play" >
         <?php 
-          $teamnaam = $_POST['teamname'] ?? '';
-          if (isset($_POST['teamname'])) {
-            echo "Vul het eerst in!";    
-          };
-          if (isset($_POST['name1']) && isset($_POST['name2']) && isset($_POST['name3'])) {
-            echo "Vul het eerst in!";
-          }
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (empty($_POST['teamname']) || empty($_POST['name1']) || empty($_POST['name2']) || empty($_POST['name3'])) {
+        echo "Vul alle velden in!";
+        }}
         ?>
-      </action=>
+      </form>
     </section>
 
   </section>

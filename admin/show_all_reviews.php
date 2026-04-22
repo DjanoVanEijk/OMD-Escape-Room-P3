@@ -13,8 +13,8 @@ try {
 
 foreach ($overzicht as $review) {
   echo htmlspecialchars($review['team']) . "<br>";
-  echo htmlspecialchars($review['player']) . "<br>";
-  echo htmlspecialchars($review['tijd']) . "<br>";
+  echo htmlspecialchars($review['players']) . "<br>";
+  echo htmlspecialchars($review['time']) . "<br>";
   echo htmlspecialchars($review['rating']) . "<br>";
   echo htmlspecialchars($review['review']) . "<br>";
 }

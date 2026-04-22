@@ -7,7 +7,7 @@ require_once('../dbcon.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['current_team_id'])) {
     $rating = $_POST['rating'] ?? 0;
-    $review = $_POST['description'] ?? 'Geen review';
+    $review = $_POST['review'] ?? 'Geen review';
     $team_id = $_SESSION['current_team_id'];
 
     $sql = "UPDATE overzicht SET rating = :rating, review = :review WHERE id = :id";
