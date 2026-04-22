@@ -95,7 +95,7 @@ function nextPage() {
 
 // Timer functionaliteit
 
-let tijd = parseInt(localStorage.getItem("tijd")) || 600;
+let tijd = parseInt(localStorage.getItem("tijd")) || 900;
 
 let timer;
 
