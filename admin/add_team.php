@@ -28,8 +28,7 @@
 
 
 $_SESSION['current_team_id'] = $db_connection->lastInsertId();
-$_SESSION['teamname'] = $team;
-$_SESSION['players'] = $all_players;
+
 
 header("Location: ../rooms/overzichtPagina.php");
 exit();
