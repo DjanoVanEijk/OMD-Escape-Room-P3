@@ -55,7 +55,7 @@ try {
           <tr>
             <td><?php echo htmlspecialchars($row['team']); ?></td>
             <td><?php echo htmlspecialchars($row['player']); ?></td>
-            <td><?php echo htmlspecialchars($row['tijd']); ?></td>
+            <td><?php echo htmlspecialchars($row['time']); ?></td>
             <td><?php echo htmlspecialchars($row['rating']); ?></td>
             <td><?php echo htmlspecialchars($row['review']); ?></td>
           </tr>
