@@ -23,7 +23,11 @@ try {
   <div class="flex2">
     <h1 class="info" id="timers">00:00</h1> 
     <h1 class=info>
-      Team: <?php echo htmlspecialchars($_SESSION['teamname'] ?? 'Geen team'); ?>
+      <?php $teamnaam = $_POST['teamname'] ?? '';
+        if (isset($_POST['teamname'])) {
+        echo "Team: $teamnaam";
+        }; 
+      ?>
     </h1> 
     <div class="hints-drop">
       <h1 class="info">?</h1>
