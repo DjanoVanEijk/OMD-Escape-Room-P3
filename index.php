@@ -1,8 +1,14 @@
 <?php
+  session_start();  
+  unset($_SESSION['start_time']);
+  unset($_SESSION['duration']);
+  
   $server = "localhost"; 
   $username = "root";
   $password = "";  
   $db = "escape-room";
+
+  $_SESSION['teamname'] = $_POST['teamname'] ?? '';
 
   try {
     $db_connection = new PDO("mysql:host=$server; dbname=$db", $username, $password);
@@ -23,14 +29,13 @@
     $all_players = $_POST['name1'] . ", " . $_POST['name2'] . ", " . $_POST['name3'];
     $time = $_POST['time'] ?? 0;
 
-    $sql = "INSERT INTO overzicht (team, players, time) 
-            VALUES (:team, :players, :time)";
-    
+    $sql = "UPDATE team 
+            SET team = :team, players = :players";
+
     $stmt = $db_connection->prepare($sql);
     $stmt->execute([
       ':team' => $team,
       ':players' => $all_players,
-      ':time' => $time
     ]);
 
     header("Location: rooms/room_1.php");

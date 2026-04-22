@@ -1,18 +1,27 @@
 <?php
+session_start();
+  unset($_SESSION['start_time']);
+  unset($_SESSION['duration']);
 require_once('../dbcon.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $rating = $_POST['rating'] ?? '';
     $review = $_POST['review'] ?? '';
+    $team = $_POST['team'] ?? '';
+    $players = $_POST['players'] ?? '';
+    $time = $_POST['time'] ?? '';
 
-    if (empty($rating) || empty($review)) {
+    if (empty($rating) || empty($review) || empty($team) || empty($players) || empty($time)) {
         echo "Vul alle velden in!";
     } else {
         try {
-            $stmt = $db_connection->prepare("INSERT INTO overzicht (rating, review) VALUES (:rating, :review)");
+            $stmt = $db_connection->prepare("INSERT INTO overzicht (rating, review, team, players, time) VALUES (:rating, :review, :team, :players, :time)");
             $stmt->execute([
                 ':rating' => $rating,
-                ':review' => $review
+                ':review' => $review,
+                ':team' => $team,
+                ':players' => $players,
+                ':time' => $time
             ]);
             header("Location: overzichtPagina.php");
             exit();
@@ -50,7 +59,7 @@ try {
         <th class="border2">Players</th>
         <th class="border2">Time</th>
         <th class="border2">Rating</th>
-        <th class="border3">Review met feedback en moeilijkheid</th>
+        <th class="border3">Review</th>
       </tr>
       <?php if (!empty($results)): ?>
         <?php foreach ($results as $row): ?>

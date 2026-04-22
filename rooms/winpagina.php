@@ -1,12 +1,15 @@
 <?php
+session_start();
+
+$end_time = time();
+$start_time = $_SESSION['start_time'] ?? $end_time;
+
+$duration = $end_time - $start_time;
+
 require_once('../dbcon.php');
 
-try {
-    $stmt = $db_connection->query("SELECT * FROM overzicht");
-    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-} catch (PDOException $e) {
-    die("Databasefout: " . $e->getMessage());
-};
+$stmtTeam = $db_connection->query("SELECT team, players FROM team");
+$teamData = $stmtTeam->fetch(PDO::FETCH_ASSOC);
 
 //$sql = "INSERT INTO overzicht (rating, review)
     //VALUES (rating, review)"; 
@@ -28,6 +31,9 @@ try {
         </div>
 
         <form action="overzichtPagina.php" method="post" class="formreview">
+            <input type="hidden" name="team" value="<?php echo htmlspecialchars($teamData['team'] ?? ''); ?>">
+            <input type="hidden" name="players" value="<?php echo htmlspecialchars($teamData['players'] ?? ''); ?>">
+             <input type="hidden" name="time" value="<?php echo htmlspecialchars($duration ?? ''); ?>">
             <h2 class="review">Review</h2>
             <input type="number" name="rating" value="rating" id="rating" placeholder="star rating" max="5" min="0">
             <textarea name="review" value="review" id="review" placeholder="Review"></textarea>
@@ -41,13 +47,25 @@ try {
                 if (isset($_POST['review'])) {
                     echo "Vul het eerst in!";    
                 };
-                $stmt = $db_connection->prepare("INSERT INTO overzicht (rating, review) VALUES (:rating, :review)");
+
+                $team = $_POST['team'] ?? '';
+                if (isset($_POST['team'])) {
+                    echo "Maak een team aan!";    
+                };
+                $players = $_POST['players'] ?? '';
+                if (isset($_POST['players'])) {
+                    echo "Maak een team aan!";    
+                };
+                $stmt = $db_connection->prepare("INSERT INTO overzicht (rating, review, team, players, time) VALUES (:rating, :review, :team, :players, :time)");
                 $stmt->execute([
                     ':rating' => $rating,
-                    ':review' => $review
+                    ':review' => $review,
+                    ':team' => $team,
+                    ':players' => $players,
+                    ':time' => $duration
                 ]);
             ?>
-        </form>3
+        </form>
     </div>
 </body>
 </html>

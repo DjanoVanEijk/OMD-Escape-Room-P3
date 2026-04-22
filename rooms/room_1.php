@@ -1,4 +1,10 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['start_time'])) {
+    $_SESSION['start_time'] = time();
+}
+
 require_once('../dbcon.php');
 
 try {
@@ -20,13 +26,13 @@ try {
 <body class="cell">
   <div class="flex2">
     <h1 class="info" id="timers">00:00</h1> 
-    <h1 class=info>
-      <?php $teamnaam = $_POST['teamname'] ?? '';
-        if (isset($_POST['teamname'])) {
-        echo "Team: $teamnaam";
-        };
-      ?>
-    </h1>  
+    <h1 class="info">
+  <?php
+  if (isset($_SESSION['teamname'])) {
+      echo "Team: " . htmlspecialchars($_SESSION['teamname']);
+  }
+  ?>
+</h1>
     <div class="hints-drop">
       <h1 class="info">?</h1>
       <div class="hints">
