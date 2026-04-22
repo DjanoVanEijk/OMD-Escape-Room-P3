@@ -1,11 +1,18 @@
 <?php
+session_start(); // Start de sessie om bij $_SESSION te kunnen
 require_once('../dbcon.php');
 
+// Controleer of er een teamnaam is, anders terug naar begin
+if (!isset($_SESSION['teamname'])) {
+    header("Location: ../index.php");
+    exit();
+}
+
 try {
-  $stmt = $db_connection->query("SELECT * FROM riddles WHERE roomId = 1");
-  $riddles = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $stmt = $db_connection->query("SELECT * FROM riddles WHERE roomId = 1");
+    $riddles = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
-  die("Databasefout: " . $e->getMessage());
+    die("Databasefout: " . $e->getMessage());
 }
 ?>
 
@@ -21,11 +28,7 @@ try {
   <div class="flex2">
     <h1 class="info" id="timers">00:00</h1> 
     <h1 class=info>
-      <?php $teamnaam = $_POST['teamname'] ?? '';
-        if (isset($_POST['teamname'])) {
-        echo "Team: $teamnaam";
-        };
-      ?>
+      Team: <?php echo htmlspecialchars($_SESSION['teamname'] ?? 'Geen team'); ?>
     </h1>  
     <div class="hints-drop">
       <h1 class="info">?</h1>
