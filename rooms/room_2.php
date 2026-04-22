@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once('../dbcon.php');
 
 try {
@@ -24,11 +23,7 @@ try {
   <div class="flex2">
     <h1 class="info" id="timers">00:00</h1> 
     <h1 class=info>
-      <?php $teamnaam = $_POST['teamname'] ?? '';
-        if (isset($_POST['teamname'])) {
-        echo "Team: $teamnaam";
-        }; 
-      ?>
+      Team: <?php echo htmlspecialchars($_SESSION['teamname'] ?? 'Geen team'); ?>
     </h1> 
     <div class="hints-drop">
       <h1 class="info">?</h1>
