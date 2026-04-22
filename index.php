@@ -30,7 +30,7 @@
     $stmt->execute([
       ':team' => $team,
       ':players' => $all_players,
-      ':time' =>  $time
+      ':time' => $time
     ]);
 
     header("Location: rooms/room_1.php");
