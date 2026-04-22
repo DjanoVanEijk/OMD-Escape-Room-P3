@@ -37,11 +37,11 @@ try {
       <?php if (!empty($results)): ?>
         <?php foreach ($results as $row): ?>
           <tr>
-            <td><?php echo htmlspecialchars($row['team']); ?></td>
-            <td><?php echo htmlspecialchars($row['player']); ?></td>
-            <td><?php echo htmlspecialchars($row['score']); ?></td>
-            <td><?php echo htmlspecialchars($row['rating']); ?></td>
-            <td><?php echo htmlspecialchars($row['review']); ?></td>
+            <td><?php echo htmlspecialchars($row['Team']); ?></td>
+            <td><?php echo htmlspecialchars($row['Player']); ?></td>
+            <td><?php echo htmlspecialchars($row['Score']); ?></td>
+            <td><?php echo htmlspecialchars($row['Rating']); ?></td>
+            <td><?php echo htmlspecialchars($row['Review']); ?></td>
           </tr>
         <?php endforeach; ?>
       <?php else: ?>
