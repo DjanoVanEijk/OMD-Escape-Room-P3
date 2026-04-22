@@ -1,11 +1,27 @@
 <?php
-session_start();
 require_once('../dbcon.php');
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $rating = $_POST['rating'] ?? '';
+    $descriptions = $_POST['descriptions'] ?? '';
+
+    if (empty($rating) || empty($descriptions)) {
+        echo "Vul alle velden in!";
+    } else {
+        try {
+            $stmt = $db_connection->prepare("INSERT INTO overzicht (rating, review) VALUES (:rating, :review)");
+            $stmt->execute([
+                ':rating' => $rating,
+                ':review' => $descriptions
+            ]);
+        } catch (PDOException $e) {
+            die("Databasefout: " . $e->getMessage());
+        }
+    }
+}
+
 try {
-    // We halen Team, Player, Score, Rating en Review op uit de database
-    $sql = "SELECT Team, Player, Score, Rating, Review FROM overzicht ORDER BY id DESC";
-    $stmt = $db_connection->query($sql);
+    $stmt = $db_connection->query("SELECT * FROM overzicht");
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
     die("Databasefout: " . $e->getMessage());
