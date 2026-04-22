@@ -118,7 +118,8 @@ function end() {
   
   if (tijd <= 0) {
     clearInterval(timer);
-    document.getElementById("overlayverlies").style.display = "block";
+    localStorage.removeItem("tijd");
+    window.location.href = "rooms/room_1.php";
   } else {
     document.getElementById("overlayverlies").style.display = "none";
   };
