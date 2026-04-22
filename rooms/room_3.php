@@ -42,6 +42,24 @@ try {
       </div>
     </div>
   </div>
+  <div class="playersName">
+    <h2>
+      <?php
+        if (isset($_POST['name1']))
+        {
+          echo "Speler 1: " . $_POST['name1'];
+        }
+        if (isset($_POST['name2']))
+        {
+          echo " | Speler 2: " . $_POST['name2'];
+        }
+        if (isset($_POST['name3']))
+        {
+          echo " | Speler 3: " . $_POST['name3'];
+        }
+      ?>
+    </h2>
+  </div>
   <div id="overlayverlies">
     <div class="verliesflex">
       <div class="verlies-container">
