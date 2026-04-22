@@ -1,4 +1,5 @@
 <?php
+session_start(); // Start de sessie om bij $_SESSION te kunnen
 require_once('../dbcon.php');
 
 try {
