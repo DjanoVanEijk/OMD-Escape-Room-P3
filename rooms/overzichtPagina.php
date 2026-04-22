@@ -14,6 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 ':rating' => $rating,
                 ':review' => $descriptions
             ]);
+            header("Location: overzichtPagina.php");
+            exit();
         } catch (PDOException $e) {
             die("Databasefout: " . $e->getMessage());
         }
@@ -46,7 +48,7 @@ try {
       <tr>
         <th class="border1">Team</th>
         <th class="border2">Player</th>
-        <th class="border2">Score</th>
+        <th class="border2">Tijd</th>
         <th class="border2">Rating</th>
         <th class="border3">Review met feedback en moeilijkheid</th>
       </tr>
@@ -55,7 +57,7 @@ try {
           <tr>
             <td><?php echo htmlspecialchars($row['team']); ?></td>
             <td><?php echo htmlspecialchars($row['player']); ?></td>
-            <td><?php echo htmlspecialchars($row['score']); ?></td>
+            <td><?php echo htmlspecialchars($row['time']); ?></td>
             <td><?php echo htmlspecialchars($row['rating']); ?></td>
             <td><?php echo htmlspecialchars($row['review']); ?></td>
           </tr>

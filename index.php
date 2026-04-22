@@ -15,11 +15,11 @@
     // 1. De gegevens uit het formulier ophalen
     $team = $_POST['teamname'];
     $all_players = $_POST['name1'] . ", " . $_POST['name2'] . ", " . $_POST['name3'];
-    $score = $_POST['score']?? 0;
+    $tijd = $_POST['tijd']?? 0;
   }
 
-  $sql = "INSERT INTO overzicht (team, player, score) 
-          VALUES (:team, :player, :score)";
+  $sql = "INSERT INTO overzicht (team, player, tijd) 
+          VALUES (:team, :player, :tijd)";
   
 ?>
 <!DOCTYPE html>
