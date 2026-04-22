@@ -13,5 +13,5 @@ try {
 foreach ($overzicht as $team) {
   echo htmlspecialchars($team['team']) . "<br>";
   echo htmlspecialchars($team['players']) . "<br>";
-  echo htmlspecialchars($team['tijd']) . "<br>";
+  echo htmlspecialchars($team['time']) . "<br>";
 }

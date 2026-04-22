@@ -21,16 +21,16 @@
   ) {
     $team = $_POST['teamname'];
     $all_players = $_POST['name1'] . ", " . $_POST['name2'] . ", " . $_POST['name3'];
-    $tijd = $_POST['tijd'] ?? 0;
+    $time = $_POST['time'] ?? 0;
 
-    $sql = "INSERT INTO overzicht (team, players, tijd) 
-            VALUES (:team, :players, :tijd)";
+    $sql = "INSERT INTO overzicht (team, players, time) 
+            VALUES (:team, :players, :time)";
     
     $stmt = $db_connection->prepare($sql);
     $stmt->execute([
       ':team' => $team,
       ':players' => $all_players,
-      ':tijd' => $tijd
+      ':time' =>  $time
     ]);
 
     header("Location: rooms/room_1.php");
