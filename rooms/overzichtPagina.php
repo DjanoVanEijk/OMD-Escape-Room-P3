@@ -1,6 +1,26 @@
 <?php
 require_once('../dbcon.php');
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $rating = $_POST['rating'] ?? '';
+    $descriptions = $_POST['descriptions'] ?? '';
+
+    if (empty($rating) || empty($descriptions)) {
+        echo "Vul alle velden in!";
+    } else {
+        try {
+            $stmt = $db_connection->prepare("INSERT INTO overzicht (rating, review) VALUES (:rating, :review)");
+            $stmt->execute([
+                ':rating' => $rating,
+                ':review' => $descriptions
+            ]);
+        } catch (PDOException $e) {
+            die("Databasefout: " . $e->getMessage());
+        }
+    }
+}
+
+
 try {
     $stmt = $db_connection->query("SELECT * FROM overzicht");
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
