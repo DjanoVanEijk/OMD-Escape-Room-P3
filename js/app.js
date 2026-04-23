@@ -123,9 +123,11 @@ function update() {
 
 timer = setInterval(update, 1000);
 
-submitbutton = document.getElementById("reviewsub")
-
-submitbutton.addEventListener("click", resetTimer) 
+// Event listener alleen toevoegen als het element bestaat
+const submitbutton = document.getElementById("reviewsub");
+if (submitbutton) {
+  submitbutton.addEventListener("click", resetTimer);
+}
 
 function resetTimer() {
   clearInterval(timer);
