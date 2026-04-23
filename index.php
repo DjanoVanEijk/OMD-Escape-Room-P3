@@ -86,7 +86,7 @@
           <h2>Speler 3:</h2>
           <input type="text" id="name3" name="name3" required>
         </div>
-        <input class="subform" type="submit" value="Play" >
+        <input type="submit" value="Play" id="subform">
         <?php 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (empty($_POST['teamname']) || empty($_POST['name1']) || empty($_POST['name2']) || empty($_POST['name3'])) {
