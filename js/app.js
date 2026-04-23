@@ -118,6 +118,7 @@ function end() {
   if (tijd <= 0) {
     clearInterval(timer);
     document.getElementById("overlayverlies").style.display = "block";
+    localStorage.removeItem("tijd");
   } else {
     document.getElementById("overlayverlies").style.display = "none";
   };
