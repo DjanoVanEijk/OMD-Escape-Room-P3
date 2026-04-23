@@ -110,18 +110,25 @@ function update() {
   let clock = document.getElementById("timers");
   clock.innerHTML = formatTijd(tijd);
   localStorage.setItem("tijd", tijd);
-}
 
-function end() {
-  update();
   tijd--;
   if (tijd <= 0) {
     clearInterval(timer);
     document.getElementById("overlayverlies").style.display = "block";
+    localStorage.removeItem("tijd");
   } else {
     document.getElementById("overlayverlies").style.display = "none";
   };
 }
 
-timer = setInterval(end, 1000);
+timer = setInterval(update, 1000);
+
+submitbutton = document.getElementById("reviewsub")
+
+submitbutton.addEventListener("click", resetTimer) 
+
+function resetTimer() {
+  clearInterval(timer);
+  localStorage.removeItem("tijd");
+}
 

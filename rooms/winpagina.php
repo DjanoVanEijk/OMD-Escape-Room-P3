@@ -57,5 +57,6 @@ $teamData = $stmtTeam->fetch(PDO::FETCH_ASSOC);
             ?>
         </form>
     </div>
+    <script src="../js/app.js"></script>
 </body>
 </html>

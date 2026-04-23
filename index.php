@@ -1,7 +1,5 @@
 <?php
   session_start();  
-  unset($_SESSION['start_time']);
-  unset($_SESSION['duration']);
   
   $server = "localhost"; 
   $username = "root";
