@@ -123,3 +123,12 @@ function update() {
 
 timer = setInterval(update, 1000);
 
+submitbutton = document.getElementById("reviewsub")
+
+submitbutton.addEventListener("click", resetTimer) 
+
+function resetTimer() {
+  clearInterval(timer);
+  localStorage.removeItem("tijd");
+}
+

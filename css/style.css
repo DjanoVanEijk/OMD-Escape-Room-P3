@@ -361,7 +361,6 @@ button {
 
 .overpage{
   background-image: url("../img/Background.jpg");
-  background-repeat: no-repeat;
   background-size:100%;
   color: white;
 }
