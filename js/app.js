@@ -113,9 +113,8 @@ function update() {
 }
 
 function end() {
-  tijd--;
   update();
-  
+  tijd--;
   if (tijd <= 0) {
     clearInterval(timer);
     document.getElementById("overlayverlies").style.display = "block";
@@ -126,4 +125,3 @@ function end() {
 
 timer = setInterval(end, 1000);
 
-// Functie om de overlay te tonen
