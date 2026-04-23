@@ -110,10 +110,7 @@ function update() {
   let clock = document.getElementById("timers");
   clock.innerHTML = formatTijd(tijd);
   localStorage.setItem("tijd", tijd);
-}
 
-function end() {
-  update();
   tijd--;
   if (tijd <= 0) {
     clearInterval(timer);
@@ -124,5 +121,5 @@ function end() {
   };
 }
 
-timer = setInterval(end, 1000);
+timer = setInterval(update, 1000);
 
